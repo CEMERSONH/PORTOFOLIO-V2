@@ -484,7 +484,7 @@ body {
 .form {
   position: absolute;
   width: 300px;
-  animation: dvdBounce 15s linear infinite;
+  animation: dvdBounce 35s linear infinite;
 }
 
 @keyframes dvdBounce {
