@@ -1,0 +1,99 @@
+/*
+ Theme Name:   Spacious Child
+ Theme URI:    https://neptunet.fr
+ Description:  Spacious Thème enfant
+ Author:       JM
+ Author URI:   https://neptunet.fr
+ Template:     spacious
+ Version:      1.0.0
+*/
+
+.footer-socket-wrapper .copyright {
+float: none;
+margin: 0 auto;
+text-align: center;
+}
+
+#header-right-section .widget {
+    text-align: right;
+    padding-top: 10px;
+}
+.widget_text {
+    word-wrap: break-word;
+    margin-bottom: -36px;
+}
+
+.main-navigation ul li a {
+    font-size: 16px;
+margin-top: -20px;
+	  padding-bottom: 1px;
+	  margin-bottom: 15px;
+	}
+
+.main-navigation .sub-menu {
+	padding-bottom: 0px;
+	padding-top: 20px;
+	//background: whitesmoke;
+opacity: 1;
+}
+
+.menu-image-title-after.menu-image-not-hovered img, .menu-image-hovered.menu-image-title-after .menu-image-hover-wrapper, .menu-image-title-before.menu-image-title {
+    padding-right: 0px;
+	padding-top: 10px;
+}
+
+
+.footer-widgets-area {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    color: #999999;
+}
+
+#colophon .widget {
+    padding-bottom: 0px;
+}
+
+#site-title a {
+    color: #1e73be;
+    font-size: 36px;
+}
+
+.spacious-header-display-four .bottom-menu .main-navigation {
+  float: right;
+}
+
+#secondary .widget {
+margin-left: 50px;
+}
+
+
+.search-wrap {
+	width: 100%;
+	border: 1px solid #1e73be;
+	padding-left: 0px;
+	padding-right: 0px;
+		}
+
+.search-wrap button {
+	float: right;
+	width: 12%;
+	}
+
+.search-wrap input {
+  width: 88%;
+	border: 0px;
+	padding: 4px 0px;
+	}
+
+.widget select {
+    border: 1px solid #1e73be;
+    width: 100%;
+	height: 32px;
+}
+
+hr { 
+border-top: 1px solid #c2c2c2;}
+
+img.wp-image-4385 {
+    margin-bottom: 1.625px;
+}

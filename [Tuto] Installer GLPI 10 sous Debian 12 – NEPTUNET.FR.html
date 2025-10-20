@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://neptunet.fr/install-glpi10/ -->
+<html lang="fr-FR"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<title>[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="alternate" type="application/rss+xml" title="NEPTUNET.FR » Flux" href="https://neptunet.fr/feed/">
+<link rel="alternate" type="application/rss+xml" title="NEPTUNET.FR » Flux des commentaires" href="https://neptunet.fr/comments/feed/">
+<div class="fit-vids-style" id="fit-vids-style" style="display: none;">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div><script type="text/javascript" id="www-widgetapi-script" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/www-widgetapi.js.téléchargé" async=""></script><script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/neptunet.fr\/wp-includes\/js\/wp-emoji-release.min.js"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="contact-form-7-css" href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/styles.css" type="text/css" media="all">
+<style id="contact-form-7-inline-css" type="text/css">
+.wpcf7 .wpcf7-recaptcha iframe {margin-bottom: 0;}.wpcf7 .wpcf7-recaptcha[data-align="center"] > div {margin: 0 auto;}.wpcf7 .wpcf7-recaptcha[data-align="right"] > div {margin: 0 0 0 auto;}
+</style>
+<link rel="stylesheet" id="cookie-law-info-css" href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/cookie-law-info-public.css" type="text/css" media="all">
+<link rel="stylesheet" id="cookie-law-info-gdpr-css" href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/cookie-law-info-gdpr.css" type="text/css" media="all">
+<link rel="stylesheet" id="menu-image-css" href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/menu-image.css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yuzo-css-css" href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/yuzo.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="parent-style-css" href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="spacious_style-css" href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/style(1).css" type="text/css" media="all">
+<style id="spacious_style-inline-css" type="text/css">
+.previous a:hover, .next a:hover, a, #site-title a:hover, .main-navigation ul li.current_page_item a, .main-navigation ul li:hover > a, .main-navigation ul li ul li a:hover, .main-navigation ul li ul li:hover > a, .main-navigation ul li.current-menu-item ul li a:hover, .main-navigation ul li:hover > .sub-toggle, .main-navigation a:hover, .main-navigation ul li.current-menu-item a, .main-navigation ul li.current_page_ancestor a, .main-navigation ul li.current-menu-ancestor a, .main-navigation ul li.current_page_item a, .main-navigation ul li:hover > a, .small-menu a:hover, .small-menu ul li.current-menu-item a, .small-menu ul li.current_page_ancestor a, .small-menu ul li.current-menu-ancestor a, .small-menu ul li.current_page_item a, .small-menu ul li:hover > a, .breadcrumb a:hover, .tg-one-half .widget-title a:hover, .tg-one-third .widget-title a:hover, .tg-one-fourth .widget-title a:hover, .pagination a span:hover, #content .comments-area a.comment-permalink:hover, .comments-area .comment-author-link a:hover, .comment .comment-reply-link:hover, .nav-previous a:hover, .nav-next a:hover, #wp-calendar #today, .footer-widgets-area a:hover, .footer-socket-wrapper .copyright a:hover, .read-more, .more-link, .post .entry-title a:hover, .page .entry-title a:hover, .post .entry-meta a:hover, .type-page .entry-meta a:hover, .single #content .tags a:hover, .widget_testimonial .testimonial-icon:before, .header-action .search-wrapper:hover .fa{color:#1e73be;}.spacious-button, input[type="reset"], input[type="button"], input[type="submit"], button, #featured-slider .slider-read-more-button, #controllers a:hover, #controllers a.active, .pagination span ,.site-header .menu-toggle:hover, .call-to-action-button, .comments-area .comment-author-link span, a#back-top:before, .post .entry-meta .read-more-link, a#scroll-up, .search-form span, .main-navigation .tg-header-button-wrap.button-one a{background-color:#1e73be;}.main-small-navigation li:hover, .main-small-navigation ul > .current_page_item, .main-small-navigation ul > .current-menu-item, .spacious-woocommerce-cart-views .cart-value{background:#1e73be;}.main-navigation ul li ul, .widget_testimonial .testimonial-post{border-top-color:#1e73be;}blockquote, .call-to-action-content-wrapper{border-left-color:#1e73be;}.site-header .menu-toggle:hover.entry-meta a.read-more:hover,#featured-slider .slider-read-more-button:hover,.call-to-action-button:hover,.entry-meta .read-more-link:hover,.spacious-button:hover, input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hover, button:hover{background:#00418c;}.pagination a span:hover, .main-navigation .tg-header-button-wrap.button-one a{border-color:#1e73be;}.widget-title span{border-bottom-color:#1e73be;}.widget_service_block a.more-link:hover, .widget_featured_single_post a.read-more:hover,#secondary a:hover,logged-in-as:hover  a,.single-page p a:hover{color:#00418c;}.main-navigation .tg-header-button-wrap.button-one a:hover{background-color:#00418c;}
+</style>
+<link rel="stylesheet" id="spacious-genericons-css" href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/genericons.css" type="text/css" media="all">
+<link rel="stylesheet" id="spacious-font-awesome-css" href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="__EPYT__style-css" href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/ytprefs.min.css" type="text/css" media="all">
+<style id="__EPYT__style-inline-css" type="text/css">
+
+                .epyt-gallery-thumb {
+                        width: 33.333%;
+                }
+                
+</style>
+<script type="text/javascript" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/jquery.min.js.téléchargé" id="jquery-core-js"></script><style type="text/css" id="operaUserStyle"></style>
+<script type="text/javascript" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/jquery-migrate.min.js.téléchargé" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="cookie-law-info-js-extra">
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":["YSC","VISITOR_INFO1_LIVE"],"cookielist":[],"non_necessary_cookies":{"performance":["VISITOR_INFO1_LIVE"],"analytics":["YSC"]},"ccpaEnabled":"","ccpaRegionBased":"","ccpaBarEnabled":"","strictlyEnabled":["necessary","obligatoire"],"ccpaType":"gdpr","js_blocking":"1","custom_integration":"","triggerDomRefresh":"","secure_cookies":""};
+var cli_cookiebar_settings = {"animate_speed_hide":"500","animate_speed_show":"500","background":"#333333","border":"#b1a6a6c2","border_on":"","button_1_button_colour":"#61a229","button_1_button_hover":"#4e8221","button_1_link_colour":"#fff","button_1_as_button":"1","button_1_new_win":"","button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#ffffff","button_2_as_button":"","button_2_hidebar":"","button_3_button_colour":"#ff0000","button_3_button_hover":"#cc0000","button_3_link_colour":"#fff","button_3_as_button":"1","button_3_new_win":"","button_4_button_colour":"#1e73be","button_4_button_hover":"#185c98","button_4_link_colour":"#ffffff","button_4_as_button":"1","button_7_button_colour":"#61a229","button_7_button_hover":"#4e8221","button_7_link_colour":"#fff","button_7_as_button":"1","button_7_new_win":"","font_family":"inherit","header_fix":"","notify_animate_hide":"","notify_animate_show":"1","notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":"","scroll_close_reload":"","accept_close_reload":"","reject_close_reload":"","showagain_tab":"1","showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#ffffff","show_once_yn":"1","show_once":"15000","logging_on":"","as_popup":"","popup_overlay":"","bar_heading_text":"Gestion des cookies","cookie_bar_as":"widget","popup_showagain_position":"bottom-right","widget_position":"right"};
+var log_object = {"ajax_url":"https:\/\/neptunet.fr\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/cookie-law-info-public.js.téléchargé" id="cookie-law-info-js"></script>
+<script type="text/javascript" id="wp-statistics-tracker-js-extra">
+/* <![CDATA[ */
+var WP_Statistics_Tracker_Object = {"hitRequestUrl":"https:\/\/neptunet.fr\/wp-json\/wp-statistics\/v2\/hit?wp_statistics_hit_rest=yes&track_all=1&current_page_type=post&current_page_id=4469&search_query&page_uri=L2luc3RhbGwtZ2xwaTEwLw=","keepOnlineRequestUrl":"https:\/\/neptunet.fr\/wp-json\/wp-statistics\/v2\/online?wp_statistics_hit_rest=yes&track_all=1&current_page_type=post&current_page_id=4469&search_query&page_uri=L2luc3RhbGwtZ2xwaTEwLw=","option":{"dntEnabled":false,"cacheCompatibility":""}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/tracker.js.téléchargé" id="wp-statistics-tracker-js"></script>
+<script type="text/javascript" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/spacious-custom.js.téléchargé" id="spacious-custom-js"></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="https://neptunet.fr/wp-content/themes/spacious/js/html5shiv.min.js" id="html5-js"></script>
+<![endif]-->
+<script type="text/javascript" id="__ytprefs__-js-extra">
+/* <![CDATA[ */
+var _EPYT_ = {"ajaxurl":"https:\/\/neptunet.fr\/wp-admin\/admin-ajax.php","security":"d10f94c55c","gallery_scrolloffset":"20","eppathtoscripts":"https:\/\/neptunet.fr\/wp-content\/plugins\/youtube-embed-plus\/scripts\/","eppath":"https:\/\/neptunet.fr\/wp-content\/plugins\/youtube-embed-plus\/","epresponsiveselector":"[\"iframe.__youtube_prefs_widget__\"]","epdovol":"1","version":"14.2","evselector":"iframe.__youtube_prefs__[src], iframe[src*=\"youtube.com\/embed\/\"], iframe[src*=\"youtube-nocookie.com\/embed\/\"]","ajax_compat":"","maxres_facade":"eager","ytapi_load":"light","pause_others":"","stopMobileBuffer":"1","facade_mode":"","not_live_on_channel":"","vi_active":"","vi_js_posttypes":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/ytprefs.min.js.téléchargé" id="__ytprefs__-js"></script>
+<link rel="https://api.w.org/" href="https://neptunet.fr/wp-json/"><link rel="alternate" type="application/json" href="https://neptunet.fr/wp-json/wp/v2/posts/4469"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://neptunet.fr/xmlrpc.php?rsd">
+
+<link rel="canonical" href="https://neptunet.fr/install-glpi10/">
+<link rel="shortlink" href="https://neptunet.fr/?p=4469">
+<link rel="alternate" type="application/json+oembed" href="https://neptunet.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fneptunet.fr%2Finstall-glpi10%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://neptunet.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fneptunet.fr%2Finstall-glpi10%2F&amp;format=xml">
+<!-- Analytics by WP Statistics v14.2 - https://wp-statistics.com/ -->
+<style type="text/css">.saboxplugin-wrap{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;border:1px solid #eee;width:100%;clear:both;display:block;overflow:hidden;word-wrap:break-word;position:relative}.saboxplugin-wrap .saboxplugin-gravatar{float:left;padding:0 20px 20px 20px}.saboxplugin-wrap .saboxplugin-gravatar img{max-width:100px;height:auto;border-radius:0;}.saboxplugin-wrap .saboxplugin-authorname{font-size:18px;line-height:1;margin:20px 0 0 20px;display:block}.saboxplugin-wrap .saboxplugin-authorname a{text-decoration:none}.saboxplugin-wrap .saboxplugin-authorname a:focus{outline:0}.saboxplugin-wrap .saboxplugin-desc{display:block;margin:5px 20px}.saboxplugin-wrap .saboxplugin-desc a{text-decoration:underline}.saboxplugin-wrap .saboxplugin-desc p{margin:5px 0 12px}.saboxplugin-wrap .saboxplugin-web{margin:0 20px 15px;text-align:left}.saboxplugin-wrap .sab-web-position{text-align:right}.saboxplugin-wrap .saboxplugin-web a{color:#ccc;text-decoration:none}.saboxplugin-wrap .saboxplugin-socials{position:relative;display:block;background:#fcfcfc;padding:5px;border-top:1px solid #eee}.saboxplugin-wrap .saboxplugin-socials a svg{width:20px;height:20px}.saboxplugin-wrap .saboxplugin-socials a svg .st2{fill:#fff; transform-origin:center center;}.saboxplugin-wrap .saboxplugin-socials a svg .st1{fill:rgba(0,0,0,.3)}.saboxplugin-wrap .saboxplugin-socials a:hover{opacity:.8;-webkit-transition:opacity .4s;-moz-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;box-shadow:none!important;-webkit-box-shadow:none!important}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color{box-shadow:none;padding:0;border:0;-webkit-transition:opacity .4s;-moz-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;display:inline-block;color:#fff;font-size:0;text-decoration:inherit;margin:5px;-webkit-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;-o-border-radius:0;border-radius:0;overflow:hidden}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-grey{text-decoration:inherit;box-shadow:none;position:relative;display:-moz-inline-stack;display:inline-block;vertical-align:middle;zoom:1;margin:10px 5px;color:#444;fill:#444}.clearfix:after,.clearfix:before{content:' ';display:table;line-height:0;clear:both}.ie7 .clearfix{zoom:1}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-twitch{border-color:#38245c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-addthis{border-color:#e91c00}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-behance{border-color:#003eb0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-delicious{border-color:#06c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-deviantart{border-color:#036824}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-digg{border-color:#00327c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-dribbble{border-color:#ba1655}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-facebook{border-color:#1e2e4f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-flickr{border-color:#003576}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-github{border-color:#264874}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-google{border-color:#0b51c5}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-googleplus{border-color:#96271a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-html5{border-color:#902e13}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-instagram{border-color:#1630aa}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-linkedin{border-color:#00344f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-pinterest{border-color:#5b040e}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-reddit{border-color:#992900}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-rss{border-color:#a43b0a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-sharethis{border-color:#5d8420}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-skype{border-color:#00658a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-soundcloud{border-color:#995200}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-spotify{border-color:#0f612c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-stackoverflow{border-color:#a95009}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-steam{border-color:#006388}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-user_email{border-color:#b84e05}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-stumbleUpon{border-color:#9b280e}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-tumblr{border-color:#10151b}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-twitter{border-color:#0967a0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-vimeo{border-color:#0d7091}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-windows{border-color:#003f71}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-whatsapp{border-color:#003f71}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-wordpress{border-color:#0f3647}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-yahoo{border-color:#14002d}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-youtube{border-color:#900}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-xing{border-color:#000202}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-mixcloud{border-color:#2475a0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-vk{border-color:#243549}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-medium{border-color:#00452c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-quora{border-color:#420e00}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-meetup{border-color:#9b181c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-goodreads{border-color:#000}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-snapchat{border-color:#999700}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-500px{border-color:#00557f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-mastodont{border-color:#185886}.sabox-plus-item{margin-bottom:20px}@media screen and (max-width:480px){.saboxplugin-wrap{text-align:center}.saboxplugin-wrap .saboxplugin-gravatar{float:none;padding:20px 0;text-align:center;margin:0 auto;display:block}.saboxplugin-wrap .saboxplugin-gravatar img{float:none;display:inline-block;display:-moz-inline-stack;vertical-align:middle;zoom:1}.saboxplugin-wrap .saboxplugin-desc{margin:0 10px 20px;text-align:center}.saboxplugin-wrap .saboxplugin-authorname{text-align:center;margin:10px 0 20px}}body .saboxplugin-authorname a,body .saboxplugin-authorname a:hover{box-shadow:none;-webkit-box-shadow:none}a.sab-profile-edit{font-size:16px!important;line-height:1!important}.sab-edit-settings a,a.sab-profile-edit{color:#0073aa!important;box-shadow:none!important;-webkit-box-shadow:none!important}.sab-edit-settings{margin-right:15px;position:absolute;right:0;z-index:2;bottom:10px;line-height:20px}.sab-edit-settings i{margin-left:5px}.saboxplugin-socials{line-height:1!important}.rtl .saboxplugin-wrap .saboxplugin-gravatar{float:right}.rtl .saboxplugin-wrap .saboxplugin-authorname{display:flex;align-items:center}.rtl .saboxplugin-wrap .saboxplugin-authorname .sab-profile-edit{margin-right:10px}.rtl .sab-edit-settings{right:auto;left:0}img.sab-custom-avatar{max-width:75px;}.saboxplugin-wrap{ border-width: 0px; }.saboxplugin-wrap .saboxplugin-gravatar img {-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;}.saboxplugin-wrap .saboxplugin-gravatar img {-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;}.saboxplugin-wrap .saboxplugin-authorname a,.saboxplugin-wrap .saboxplugin-authorname span {color:#1e73be;}.saboxplugin-wrap {margin-top:0px; margin-bottom:0px; padding: 0px 0px }.saboxplugin-wrap .saboxplugin-authorname {font-size:18px; line-height:25px;}.saboxplugin-wrap .saboxplugin-desc p, .saboxplugin-wrap .saboxplugin-desc {font-size:15px !important; line-height:22px !important;}.saboxplugin-wrap .saboxplugin-web {font-size:14px;}.saboxplugin-wrap .saboxplugin-socials a svg {width:18px;height:18px;}</style><link rel="icon" href="https://neptunet.fr/wp-content/uploads/2019/08/logo-Copie-100x100.png" sizes="32x32">
+<link rel="icon" href="https://neptunet.fr/wp-content/uploads/2019/08/logo-Copie.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://neptunet.fr/wp-content/uploads/2019/08/logo-Copie.png">
+<meta name="msapplication-TileImage" content="https://neptunet.fr/wp-content/uploads/2019/08/logo-Copie.png">
+<style> .yzp-id-2150.yzp-wrapper .yzp-container .yzp-wrap-item .yzp-item .yzp-item-title a{ font-weight: 100!important; }.yzp-id-2150.yzp-wrapper .yzp-container .yzp-wrap-item .yzp-item .yzp-item-title a{ color: #3366ff!important; }.yzp-id-2150.yzp-wrapper .yzp-container { grid-gap:30px; }  .yzp-id-2150.yzp-wrapper .yzp-container .yzp-wrap-item{display:none;}@media screen and (min-width: 319px) and (max-width: 767px) {.yzp-id-2150.yzp-wrapper .yzp-container .yzp-wrap-item:nth-child(1){display:list-item;}.yzp-id-2150.yzp-wrapper.yzp-layout-grid .yzp-container .yzp-wrap-item:nth-child(1){list-style:none;}.yzp-id-2150.yzp-wrapper .yzp-container .yzp-wrap-item:nth-child(2){display:list-item;}.yzp-id-2150.yzp-wrapper.yzp-layout-grid .yzp-container .yzp-wrap-item:nth-child(2){list-style:none;}}@media screen and (min-width: 768px) and (max-width: 1024px) {.yzp-id-2150.yzp-wrapper .yzp-container .yzp-wrap-item:nth-child(1){display:list-item;}.yzp-id-2150.yzp-wrapper.yzp-layout-grid .yzp-container .yzp-wrap-item:nth-child(1){list-style:none;}.yzp-id-2150.yzp-wrapper .yzp-container .yzp-wrap-item:nth-child(2){display:list-item;}.yzp-id-2150.yzp-wrapper.yzp-layout-grid .yzp-container .yzp-wrap-item:nth-child(2){list-style:none;}.yzp-id-2150.yzp-wrapper .yzp-container .yzp-wrap-item:nth-child(3){display:list-item;}.yzp-id-2150.yzp-wrapper.yzp-layout-grid .yzp-container .yzp-wrap-item:nth-child(3){list-style:none;}}@media screen and (min-width: 1025px) {.yzp-id-2150.yzp-wrapper .yzp-container .yzp-wrap-item:nth-child(1){display:list-item;}.yzp-id-2150.yzp-wrapper.yzp-layout-grid .yzp-container .yzp-wrap-item:nth-child(1){list-style:none;}.yzp-id-2150.yzp-wrapper .yzp-container .yzp-wrap-item:nth-child(2){display:list-item;}.yzp-id-2150.yzp-wrapper.yzp-layout-grid .yzp-container .yzp-wrap-item:nth-child(2){list-style:none;}.yzp-id-2150.yzp-wrapper .yzp-container .yzp-wrap-item:nth-child(3){display:list-item;}.yzp-id-2150.yzp-wrapper.yzp-layout-grid .yzp-container .yzp-wrap-item:nth-child(3){list-style:none;}}.yzp-id-2150.yzp-wrapper.yzp-aspect-ratio-4-3{ --yzp-aspect-ratio:4/3 } .yzp-id-2150.yzp-wrapper.yzp-aspect-ratio-4-3{ --yzp-aspect-ratio:4/3 } </style>		<style type="text/css"> blockquote { border-left: 3px solid #1e73be; }
+			.spacious-button, input[type="reset"], input[type="button"], input[type="submit"], button { background-color: #1e73be; }
+			.previous a:hover, .next a:hover { 	color: #1e73be; }
+			a { color: #1e73be; }
+			#site-title a:hover { color: #1e73be; }
+			.main-navigation ul li.current_page_item a, .main-navigation ul li:hover > a { color: #1e73be; }
+			.main-navigation ul li ul { border-top: 1px solid #1e73be; }
+			.main-navigation ul li ul li a:hover, .main-navigation ul li ul li:hover > a, .main-navigation ul li.current-menu-item ul li a:hover, .main-navigation ul li:hover > .sub-toggle { color: #1e73be; }
+			.site-header .menu-toggle:hover.entry-meta a.read-more:hover,#featured-slider .slider-read-more-button:hover,.call-to-action-button:hover,.entry-meta .read-more-link:hover,.spacious-button:hover, input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hover, button:hover { background: #00418c; }
+			.main-small-navigation li:hover { background: #1e73be; }
+			.main-small-navigation ul > .current_page_item, .main-small-navigation ul > .current-menu-item { background: #1e73be; }
+			.main-navigation a:hover, .main-navigation ul li.current-menu-item a, .main-navigation ul li.current_page_ancestor a, .main-navigation ul li.current-menu-ancestor a, .main-navigation ul li.current_page_item a, .main-navigation ul li:hover > a  { color: #1e73be; }
+			.small-menu a:hover, .small-menu ul li.current-menu-item a, .small-menu ul li.current_page_ancestor a, .small-menu ul li.current-menu-ancestor a, .small-menu ul li.current_page_item a, .small-menu ul li:hover > a { color: #1e73be; }
+			#featured-slider .slider-read-more-button { background-color: #1e73be; }
+			#controllers a:hover, #controllers a.active { background-color: #1e73be; color: #1e73be; }
+			.widget_service_block a.more-link:hover, .widget_featured_single_post a.read-more:hover,#secondary a:hover,logged-in-as:hover  a,.single-page p a:hover{ color: #00418c; }
+			.breadcrumb a:hover { color: #1e73be; }
+			.tg-one-half .widget-title a:hover, .tg-one-third .widget-title a:hover, .tg-one-fourth .widget-title a:hover { color: #1e73be; }
+			.pagination span ,.site-header .menu-toggle:hover{ background-color: #1e73be; }
+			.pagination a span:hover { color: #1e73be; border-color: #1e73be; }
+			.widget_testimonial .testimonial-post { border-color: #1e73be #EAEAEA #EAEAEA #EAEAEA; }
+			.call-to-action-content-wrapper { border-color: #EAEAEA #EAEAEA #EAEAEA #1e73be; }
+			.call-to-action-button { background-color: #1e73be; }
+			#content .comments-area a.comment-permalink:hover { color: #1e73be; }
+			.comments-area .comment-author-link a:hover { color: #1e73be; }
+			.comments-area .comment-author-link span { background-color: #1e73be; }
+			.comment .comment-reply-link:hover { color: #1e73be; }
+			.nav-previous a:hover, .nav-next a:hover { color: #1e73be; }
+			#wp-calendar #today { color: #1e73be; }
+			.widget-title span { border-bottom: 2px solid #1e73be; }
+			.footer-widgets-area a:hover { color: #1e73be !important; }
+			.footer-socket-wrapper .copyright a:hover { color: #1e73be; }
+			a#back-top:before { background-color: #1e73be; }
+			.read-more, .more-link { color: #1e73be; }
+			.post .entry-title a:hover, .page .entry-title a:hover { color: #1e73be; }
+			.post .entry-meta .read-more-link { background-color: #1e73be; }
+			.post .entry-meta a:hover, .type-page .entry-meta a:hover { color: #1e73be; }
+			.single #content .tags a:hover { color: #1e73be; }
+			.widget_testimonial .testimonial-icon:before { color: #1e73be; }
+			a#scroll-up { background-color: #1e73be; }
+			.search-form span { background-color: #1e73be; }.header-action .search-wrapper:hover .fa{ color: #1e73be} .spacious-woocommerce-cart-views .cart-value { background:#1e73be}.main-navigation .tg-header-button-wrap.button-one a{background-color:#1e73be} .main-navigation .tg-header-button-wrap.button-one a{border-color:#1e73be}.main-navigation .tg-header-button-wrap.button-one a:hover{background-color:#00418c}.main-navigation .tg-header-button-wrap.button-one a:hover{border-color:#00418c}</style>
+				<style type="text/css" id="wp-custom-css">
+			.footer-socket-wrapper .copyright {
+float: none;
+margin: 0 auto;
+text-align: center;
+}
+
+#header-right-section .widget {
+    text-align: right;
+    padding-top: 10px;
+}
+.widget_text {
+    word-wrap: break-word;
+    margin-bottom: -36px;
+}
+
+.main-navigation ul li a {
+    font-size: 16px;
+margin-top: -20px;
+	  padding-bottom: 1px;
+	  margin-bottom: 15px;
+	}
+
+.main-navigation .sub-menu {
+	padding-bottom: 0px;
+	padding-top: 20px;
+	//background: whitesmoke;
+opacity: 1;
+}
+
+.menu-image-title-after.menu-image-not-hovered img, .menu-image-hovered.menu-image-title-after .menu-image-hover-wrapper, .menu-image-title-before.menu-image-title {
+    padding-right: 0px;
+	padding-top: 10px;
+}
+
+
+.footer-widgets-area {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    color: #999999;
+}
+
+#colophon .widget {
+    padding-bottom: 0px;
+}
+
+#site-title a {
+    color: #1e73be;
+    font-size: 36px;
+}
+
+.spacious-header-display-four .bottom-menu .main-navigation {
+  float: right;
+}
+
+
+.search-wrap {
+	width: 100%;
+	border: 1px solid #1e73be;
+	padding-left: 0px;
+	padding-right: 0px;
+		}
+
+.search-wrap button {
+	float: right;
+	width: 12%;
+	}
+
+.search-wrap input {
+  width: 88%;
+	border: 0px;
+	padding: 4px 0px;
+	}
+
+.widget select {
+    border: 1px solid #1e73be;
+    width: 100%;
+	height: 32px;
+}
+
+#search-2 h3.widget-title::before {
+    content: url("https://neptunet.fr/wp-content/uploads/2021/02/34679.png");
+padding-right: 5px;
+	vertical-align: middle;
+}
+
+#recent-posts-2 h3.widget-title::before {
+    content: url("https://neptunet.fr/wp-content/uploads/2020/05/48534.png");
+padding-right: 5px;
+	vertical-align: middle;
+}
+
+#categories-2 h3.widget-title::before {
+    content: url("https://neptunet.fr/wp-content/uploads/2020/05/36749.png");
+padding-right: 5px;
+	vertical-align: middle;
+}
+
+#text-5 h3.widget-title::before {
+    content: url("https://neptunet.fr/wp-content/uploads/2020/11/33081.png");
+padding-right: 5px;
+	vertical-align: middle;
+}
+
+#text-5 h3.widget-title {
+	padding-bottom : 5px;
+}
+
+
+#text-8 h3.widget-title::before {
+    content: url("https://neptunet.fr/wp-content/uploads/2021/02/39959.png");
+padding-right: 5px;
+	vertical-align: middle;
+}
+
+#text-8 h3.widget-title {
+	padding-bottom : 5px;
+}
+
+
+#text-11 h3.widget-title::before {
+    content: url("https://neptunet.fr/wp-content/uploads/2020/05/6125.png");
+padding-right: 10px;
+	vertical-align: middle;
+}
+
+
+
+#search-4 h3.widget-title {
+	padding-top: 14px;
+	padding-bottom: 10px
+	
+}
+
+#search-4 h3.widget-title::before {
+    content: url("https://neptunet.fr/wp-content/uploads/2021/02/34679.png");
+padding-right: 5px;
+	vertical-align: middle;
+}
+
+hr { 
+border-top: 2px solid #c2c2c2;}
+
+#text-8.widget.widget_text {
+    margin-bottom: 20px;
+ }
+
+#text-5.widget.widget_text {
+    margin-bottom: 20px;
+ }
+
+.saboxplugin-wrap .saboxplugin-desc p, .saboxplugin-wrap .saboxplugin-desc {
+
+	text-align: justify;
+}
+
+.saboxplugin-wrap .saboxplugin-gravatar img {
+margin: auto;
+	margin-top: 20px;
+}
+
+#simple_author_box_widget_lite-8 h3.widget-title {
+padding-bottom: 0px;
+}
+
+/* Ajoute l'icone d'un cookie à gauche du titre de la bannière de cookies */
+.cli_messagebar_head::before {
+    content: url("https://neptunet.fr/wp-content/uploads/2021/05/13164.png");
+padding-right: 5px;
+	vertical-align: middle;
+}
+
+/* Ajoute l'icone d'un cookie à gauche du titre du bouton "Gérer les cookies" */
+span#cookie_hdr_showagain::before {
+    content: url("https://neptunet.fr/wp-content/uploads/2021/05/13164.png");
+padding-right: 5px;
+	vertical-align: middle;
+}
+
+/* Justifier le texte des cookies */
+.cli-style-v2 .cli-bar-message {
+text-align : justify;
+}
+
+
+/* centrer les boutons de la fenêtre des cookies */
+div.cli-bar-btn_container  {
+  display: block;
+  margin : auto;
+} 
+
+
+h5.cli_messagebar_head {
+color : #ffffff ;
+	padding : 0px ;
+	
+}
+
+a#CONSTANT_OPEN_URL.cli-plugin-main-link {
+color : rgb(255 255 255) ;
+}		</style>
+		<style>/* Style for general Yuzo
+.wp-yuzo {
+	color: #000;
+}
+
+/* Style for specific Yuzo, where 7465 is the specific Yuzo ID
+.wp-yuzo.yzp-id-7465 {
+	text-align: center;
+}*/
+
+
+.yzp-item-title {
+font-family: georgia;
+}</style><script src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/wp-emoji-release.min.js.téléchargé" defer=""></script><style type="text/css">:root [href^="//x4pollyxxpush.com/"], :root zeus-ad, :root topadblock, :root span[id^="ezoic-pub-ad-placeholder-"], :root guj-ad, :root gpt-ad, :root div[id^="zergnet-widget"], :root div[id^="vuukle-ad-"], :root div[id^="sticky_ad_"], :root div[id^="rc-widget-"], :root div[id^="gpt_ad_"], :root div[id^="ezoic-pub-ad-"], :root div[id^="div-gpt-"], :root div[id^="dfp-ad-"], :root div[id^="adspot-"], :root div[id^="ads300_250-widget-"], :root div[id^="ads300_100-widget-"], :root div[id^="ads250_250-widget-"], :root div[id^="adrotate_widgets-"], :root div[id^="_vdo_ads_player_ai_"], :root div[id*="ScriptRoot"], :root div[id*="MarketGid"], :root div[data-native_ad], :root div[data-mini-ad-unit], :root div[data-insertion], :root div[data-id-advertdfpconf], :root div[data-google-query-id], :root hl-adsense, :root div[data-contentexchange-widget], :root div[data-content="Advertisement"], :root div[data-alias="300x250 Ad 2"], :root div[data-alias="300x250 Ad 1"], :root div[data-adzone], :root div[data-adunit-path], :root div[data-ad-wrapper], :root div[data-ad-placeholder], :root div[class^="native-ad-"], :root div[data-dfp-id], :root div[class^="kiwi-ad-wrapper"], :root div[class^="Adstyled__AdWrapper-"], :root div[aria-label="Ads"], :root display-ads, :root display-ad-component, :root atf-ad-slot, :root aside[id^="adrotate_widgets-"], :root article.ad, :root ark-top-ad, :root app-advertisement, :root app-ad, :root amp-fx-flying-carpet, :root amp-embed[type="taboola"], :root amp-connatix-player, :root amp-ad-custom, :root amp-ad, :root a[style="width:100%;height:100%;z-index:10000000000000000;position:absolute;top:0;left:0;"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[href^="https://yogacomplyfuel.com/"], :root a[href^="https://www.sugarinstant.com/?partner_id="], :root a[href^="https://www.privateinternetaccess.com/"] > img, :root a[href^="https://www.onlineusershielder.com/"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="https://www.nudeidols.com/cams/"], :root a[href^="https://www.mypornstarcams.com/landing/click/"], :root a[href^="https://www.kingsoffetish.com/tour?partner_id="], :root a[href^="https://www.infowarsstore.com/"] > img, :root a[href^="https://www.highcpmrevenuenetwork.com/"], :root a[href^="https://www.googleadservices.com/pagead/aclk?"], :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root a[href^="https://www.get-express-vpn.com/offer/"], :root a[href^="https://www.financeads.net/tc.php?"], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root div[class^="Display_displayAd"], :root a[href^="https://www.sheetmusicplus.com/?aff_id="], :root a[href^="https://www.bang.com/?aff="], :root a[href^="https://www.adxsrve.com/"], :root a[href^="https://wirewar.website/"], :root a[href^="https://visit-website.com/"], :root a[href^="https://twinrdsyn.com/"], :root a[href^="https://twinrdsrv.com/"], :root a[href^="https://tsartech.g2afse.com/"], :root a[href^="https://trk.sportsflix4k.club/"], :root a[href^="https://trk.nfl-online-streams.club/"], :root a[href^="https://traffdaq.com/"], :root a[href^="https://tracking.avapartner.com/"], :root a[href^="https://track.wg-aff.com"], :root a[href^="https://track.ultravpn.com/"], :root a[href^="https://track.totalav.com/"], :root a[href^="https://track.afcpatrk.com/"], :root a[href^="https://track.adform.net/"], :root a[href^="https://torguard.net/aff.php"] > img, :root a[href^="https://thefacux.com/"], :root div[data-adname], :root a[href^="https://thechleads.pro/"], :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="https://taghaugh.com/"], :root a[href^="https://t.hrtye.com/"], :root a[href^="https://www.highperformancecpmgate.com/"], :root a[href^="https://t.grtyi.com/"], :root a[href^="https://t.adating.link/"], :root a[href^="https://go.trackitalltheway.com/"], :root [href^="https://track.fiverr.com/visit/"] > img, :root a[href^="https://syndication.exoclick.com/"], :root a[href^="https://syndication.dynsrvtbg.com/"], :root a[href^="https://streamate.com/landing/click/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="https://static.fleshlight.com/images/banners/"], :root a[href^="https://slkmis.com/"], :root a[href^="https://sTaRtGAMing.net/tienda/"], :root citrus-ad-wrapper, :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="https://sTaRTgamInG.net/tienda/"], :root [data-adblockkey], :root a[href^="https://sTARtgamIng.net/tienda/"], :root bottomadblock, :root a[href^="https://s.zlinkd.com/"], :root a[href^="https://aweptjmp.com/"], :root a[href^="https://s.zlinkc.com/"], :root a[href^="https://www.mrskin.com/account/"], :root a[href^="https://s.optzsrv.com/"], :root a[data-obtrack^="http://paid.outbrain.com/network/redir?"], :root a[href^="https://reinstandpointdumbest.com/"], :root a[href^="https://go.strpjmp.com/"], :root a[href^="https://refpa4903566.top/"], :root a[href^="https://pubads.g.doubleclick.net/"], :root a[href^="https://prf.hn/click/"][href*="/camref:"] > img, :root a[href^="https://serve.awmdelivery.com/"], :root a[href^="https://prf.hn/click/"][href*="/adref:"] > img, :root a[href^="https://pb-track.com/"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root ps-connatix-module, :root div[id^="ad_position_"], :root a[href^="https://ovb.im/"], :root div[id^="ad-div-"], :root a[href^="https://newbinotracs.com/"], :root a[href^="http://eighteenderived.com/"], :root a[href^="https://natour.naughtyamerica.com/track/"], :root [href^="https://stvkr.com/"], :root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"], :root a[href^="https://loboclick.com"], :root .nya-slot[style], :root a[href^="https://a.bestcontentweb.top/"], :root a[href^="https://lobimax.com/"], :root a[href^="https://lead1.pl/"], :root a[href^="https://refpa.top/"], :root a[href^="https://landing.brazzersnetwork.com/"], :root a[href^="https://safesurfingtoday.com/"][href*="?skip="], :root a[href^="https://t.acam.link/"], :root a[href^="https://ads.leovegas.com/redirect.aspx?"], :root a[href^="https://land.brazzersnetwork.com/landing/"], :root [data-css-class="dfp-inarticle"], :root .card-captioned.crd > .crd--cnt > .s2nPlayer, :root a[href^="https://go.tmrjmp.com"], :root a[href^="https://startgamIng.Net/tienda/"], :root a[href^="https://l.hyenadata.com/"], :root a[href^="https://yourperfectdating.life/"], :root a[href^="https://join.virtuallust3d.com/"], :root a[href^="https://kiksajex.com/"], :root a[href^="https://juicyads.in/"], :root a[href^="https://mediaserver.gvcaffiliates.com/renderBanner.do?"], :root a[href^="https://join.dreamsexworld.com/"], :root a[href^="https://itubego.com/video-downloader/?affid="], :root a[href^="https://iqbroker.com/"][href*="?aff="], :root a[href^="https://incisivetrk.cvtr.io/click?"], :root a[href^="https://hot-growngames.life/"], :root [data-revive-zoneid], :root a[href^="https://googleads.g.doubleclick.net/pcs/click"], :root a[href^="https://t.ajump1.com/"], :root a[href^="https://clk.wrenchsound.store/"], :root a[href^="https://go.zybrdr.com"], :root [href^="http://join.michelle-austin.com/"], :root [class^="tile-picker__CitrusBannerContainer-sc-"], :root a[href^="https://go.xxxiijmp.com"], :root a[href^="https://go.xtbaffiliates.com/"], :root a[href^="https://thaudray.com/"], :root .OUTBRAIN[data-widget-id^="FMS_REELD_"], :root [data-role="tile-ads-module"], :root a[href^="https://adsrv4k.com/"], :root a[href^="https://go.xlviirdr.com"], :root a[href^="https://ismlks.com/"], :root a[href^="//a.bestcontentfare.top/"], :root [href^="https://www.mypillow.com/"] > img, :root a[href^="https://azpresearch.club/"], :root a[href^="https://go.xlirdr.com"], :root a[href^="https://go.skinstrip.net"][href*="?campaignId="], :root a[href^="https://go.markets.com/visit/?bta="], :root a[href^="https://billing.purevpn.com/aff.php"] > img, :root a[href^="https://go.hpyrdr.com/"], :root a[href^="https://go.goaserv.com/"], :root a[href^="https://go.dmzjmp.com"], :root a[href^="https://go.admjmp.com/"], :root [href^="https://kingered-banctours.com/"], :root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img, :root a-ad, :root a[href^="https://affiliate.rusvpn.com/click.php?"], :root a[href^="https://geniusdexchange.com/"], :root a[href^="https://frameworkdeserve.com/"], :root a[href^="https://flirtandsweets.life/"], :root a[href^="https://www.mrskin.com/tour"], :root a[href^="https://financeads.net/tc.php?"], :root div[data-native-ad], :root a[href^="https://engine.trackingdesks.com/"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root [href^="https://www.reimageplus.com/"], :root a[href^="https://ak.hauchiwu.com/"], :root a[href^="https://engine.phn.doublepimp.com/"], :root a[href^="https://engine.blueistheneworanges.com/"], :root a[href^="https://dl-protect.net/"], :root [href="//jjgirls.com/sex/ChaturbateCams"], :root a[href^="https://datingoffers30.info/"], :root a[href^="https://ctosrd.com/"], :root a[href^="https://clixtrac.com/"], :root a[href^="https://click.linksynergy.com/fs-bin/"] > img, :root ad-shield-ads, :root a[href^="https://sTartGAMinG.net/tienda/"], :root AD-TRIPLE-BOX, :root a[href^="https://click.hoolig.app/"], :root img[src^="https://images.purevpnaffiliates.com"], :root a[href^="https://porntubemate.com/"], :root a[href^="http://www.gfrevenge.com/landing/"], :root a[href^="https://clickadilla.com/"], :root a[href^="https://click.dtiserv2.com/"], :root a[href^="https://go.xlvirdr.com"], :root a[href^="http://www.iyalc.com/"], :root a[href^="https://claring-loccelkin.com/"], :root a[href^="https://chaturbate.com/in/?track="], :root a[href^="https://chaturbate.com/in/?tour="], :root a[href^="https://cams.imagetwist.com/in/?track="], :root a[href^="https://go.gldrdr.com/"], :root a[href^="https://buqkrzbrucz.com/"], :root a[href^="https://affcpatrk.com/"], :root a[href^="https://bongacams2.com/track?"], :root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="], :root a[href^="https://bngpt.com/"], :root a[href^="https://bluedelivery.pro/"], :root a[href^="https://black77854.com/"], :root a[href^="https://bc.game/"], :root a[href^="https://ndt5.net/"], :root a[href^="https://batheunits.com/"], :root a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"], :root a[href^="https://banners.livepartners.com/"], :root a[href^="//whulsaux.com/"], :root a[href^="https://m.do.co/c/"] > img, :root [class^="s2nPlayer"], :root a[href^="https://chaturbate.jjgirls.com/?track="], :root a[href^="https://ausoafab.net/"], :root a[href^="https://t.ajrkm1.com/"], :root [href="https://masstortfinancing.com"] img, :root a[href^="https://bongacams10.com/track?"], :root a[href^="https://albionsoftwares.com/"], :root a[href^="https://go.etoro.com/"] > img, :root a[href^="https://convertmb.com/"], :root a[href^="https://spo-play.live/"], :root a[href^="https://join.sexworld3d.com/track/"], :root a[href^="https://intenseaffiliates.com/redirect/"], :root a[href^="https://ads.ad4game.com/"], :root [id^="google_ads_iframe"], :root a[href^="https://syndication.optimizesrv.com/"], :root a[href^="https://affpa.top/"], :root a[href^="https://adnetwrk.com/"], :root a[href^="https://adjoincomprise.com/"], :root [href^="http://misslinkvocation.com/"], :root a[href^="https://adclick.g.doubleclick.net/"], :root a[href^="https://www.bet365.com/"][href*="affiliate="], :root [href^="https://r.kraken.com/"], :root a[href^="https://mmwebhandler.aff-online.com/"], :root a[href^="https://go.nordvpn.net/aff"] > img, :root [href^="http://clicks.totemcash.com/"], :root a[href^="https://misspkl.com/"], :root a[href^="https://ad.zanox.com/ppc/"] > img, :root a[href^="https://ad.kubiccomps.icu/"], :root a[href^="https://ab.advertiserurl.com/aff/"], :root a[href^="https://a2.adform.net/"], :root a[href^="https://iactrivago.ampxdirect.com/"], :root a[href^="https://a.medfoodhome.com/"], :root a[href^="https://adultfriendfinder.com/go/"], :root a[href^="https://a.bestcontentoperation.top/"], :root a[href^="http://static.fleshlight.com/images/banners/"], :root a[href^="https://a.adtng.com/"], :root [data-m-ad-id], :root a[href^="https://sTartgAminG.net/tienda/"], :root a[href^="https://a-ads.com/"], :root a[href^="https://join.virtualtaboo.com/track/"], :root a[href^="https://StarTGAminG.net/tienda/"], :root a[href^="https://STaRTgamINg.net/tienda/"], :root a[href^="http://www.mrskin.com/tour"], :root a[href^="https://agacelebir.com/"], :root a[href^="https://spygasm.com/track?"], :root ins.adsbygoogle, :root a[href^="https://1startfiledownload1.com/"], :root a[href^="https://s.zlinkb.com/"], :root a[href^="http://d2.zedo.com/"], :root a[href^="http://www.friendlyduck.com/AF_"], :root a[href^="http://trk.globwo.online/"], :root a[href^="https://1betandgonow.com/"], :root a[href^="https://prf.hn/click/"][href*="/creativeref:"] > img, :root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="], :root a[href^="http://traffic.tc-clicks.com/"], :root a[href^="http://tour.mrskin.com/"], :root [href^="https://wct.link/"], :root [data-desktop-ad-id], :root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"], :root a[href^="http://m.hue2m.com/"], :root a[href^="https://funkydaters.com/"], :root [id^="ad_sky"], :root a[href^="http://https://www.get-express-vpn.com/offer/"], :root div[id^="google_dfp_"], :root a[href^="http://googleads.g.doubleclick.net/pcs/click"], :root [href^="http://go.cm-trk2.com/"], :root a[href^="http://click.payserve.com/"], :root a[href^="https://porngames.adult/?SID="], :root a[href^="https://landing1.brazzersnetwork.com"], :root #slashboxes > .deals-rail, :root [href^="http://globsads.com/"], :root [href^="https://www.brighteonstore.com/products/"] img, :root a[href^="http://bc.vc/?r="], :root a[href^="https://mityneedn.com/"], :root [href^="http://homemoviestube.com/"], :root a[href^="http://ad.doubleclick.net/"], :root a[href^="//zunsoach.com/"], :root a[href^="//s.st1net.com/splash.php"], :root a[href^="//pubads.g.doubleclick.net/"], :root a[href^="https://femglobal.app/"], :root a[href^="//go.eabids.com/"], :root [id^="div-gpt-ad"], :root .ob_container .item-container-obpd, :root div[id^="yandex_ad"], :root a[href^="https://pb-imc.com/"], :root a[href^="http://deskfrontfreely.com/"], :root a[data-url^="http://paid.outbrain.com/network/redir?"] + .author, :root [href^="https://join.playboyplus.com/track/"], :root a[href^="//ardslediana.com/"], :root [data-d-ad-id], :root a[href*=".engine.adglare.net/"], :root #kt_player > a[target="_blank"], :root a[href*=".cfm?fp="][href*="&maxads="], :root [data-ad-width], :root [href^="https://cpa.10kfreesilver.com/"], :root a[href^="https://a.bestcontentfood.top/"], :root a[href^="http://wct.link/"], :root [href^="https://goldforyourfuture.com/clk.trk"] img, :root [onclick^="location.href='http://www.reimageplus.com"], :root [id^="section-ad-banner"], :root a[href^="https://t.aslnk.link/"], :root a[href^="https://click.candyoffers.com/"], :root [href^="https://zstacklife.com/"] img, :root a[href^="https://go.julrdr.com/"], :root .trc_rbox_div .syndicatedItemUB, :root [href^="https://zone.gotrackier.com/"], :root a[href^="https://fourwhenstatistics.com/"], :root [href^="https://detachedbates.com/"], :root [href^="https://www.targetingpartner.com/"], :root .section-subheader > .section-hotel-prices-header, :root [href^="https://go.affiliatexe.com/"], :root [href^="https://www.hostg.xyz/"] > img, :root a[href^="http://adultfriendfinder.com/go/"], :root a[href^="https://maymooth-stopic.com/"], :root [href^="https://www.herbanomic.com/"] > img, :root div[id^="ad-position-"], :root a[href^="http://affiliate.glbtracker.com/"], :root a[href^="https://leg.xyz/?track="], :root div[id^="crt-"][style], :root a[href^="http://adultgames.xxx/"], :root a[href^="https://bngprm.com/"], :root [href^="https://shiftnetwork.infusionsoft.com/go/"] > img, :root a[href^="https://trk.softonixs.xyz/"], :root [href^="https://www.mypatriotsupply.com/"] > img, :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"], :root [href^="https://secure.bmtmicro.com/servlets/"], :root [href="https://ourgoldguy.com/contact/"] img, :root a[href^="https://brightadnetwork.com/"], :root a[href^="http://www.onwebcam.com/random?t_link="], :root [href^="https://www.avantlink.com/click.php"] img, :root a[href^="https://losingoldfry.com/"], :root [data-wpas-zoneid], :root .scroll-fixable.rail-right > .deals-rail, :root [href^="https://routewebtk.com/"], :root a[href^="https://oackoubs.com/"], :root a[href^="https://ak.psaltauw.net/"], :root a[href^="https://go.cmtaffiliates.com/"], :root [data-name="adaptiveConstructorAd"], :root [href^="https://optimizedelite.com/"] > img, :root a[href^="https://awptjmp.com/"], :root a[href^="https://go.goasrv.com/"], :root [href^="http://mypillow.com/"] > img, :root a[href^="http://bongacams.com/track?"], :root a[href^="https://fleshlight.sjv.io/"], :root [data-ad-manager-id], :root a[href^="https://promo-bc.com/"], :root a[href^="https://clicks.pipaffiliates.com/"], :root [href^="https://noqreport.com/"] > img, :root [href^="https://mylead.global/stl/"] > img, :root [href^="https://mypatriotsupply.com/"] > img, :root [data-freestar-ad], :root a[href^="https://fc.lc/ref/"], :root .vid-present > .van_vid_carousel__padding, :root span[data-ez-ph-id], :root [href^="https://track.aftrk1.com/"], :root div[id^="adngin-"], :root [data-rc-widget], :root a[href^="https://go.xxxijmp.com"], :root [href^="https://istlnkcl.com/"], :root a[href^="https://staRTgaming.net/tienda/"], :root a[href^="https://STaRtgAmInG.net/tienda/"], :root [href^="https://ilovemyfreedoms.com/landing-"], :root [href^="https://go.xlrdr.com"], :root [href^="https://go.4rabettraff.com/"], :root a[href^="https://tm-offers.gamingadult.com/"], :root [href^="https://charmingdatings.life/"], :root [href^="https://glersakr.com/"], :root a[href^="https://italarizege.xyz/"], :root a[href^="https://wittered-mainging.com/"], :root [href^="https://engine.gettopple.com/"], :root [data-id^="div-gpt-ad"], :root a[href^="https://tracker.loropartners.com/"], :root [href^="https://awbbjmp.com/"], :root a[href^="https://k2s.cc/pr/"], :root [href^="https://affect3dnetwork.com/track/"], :root a[href^="https://camfapr.com/landing/click/"], :root [href="//sexcams.plus/"], :root a[href^="https://go.currency.com/"], :root div[id^="advads_ad_"], :root .resultsList > div > div > div > div[data-resultid$="-sponsored"], :root [href^="http://www.mypillow.com/"] > img, :root a[href^="https://adserver.adreactor.com/"], :root [href^="http://join.shemalesfromhell.com/"], :root a[href^="https://ads.betfair.com/redirect.aspx?"], :root [href^="http://www.fleshlightgirls.com/"], :root [href^="http://join.trannies-fuck.com/"], :root .trc_rbox .syndicatedItem, :root a[href^="http://cam4com.go2cloud.org/aff_c?"], :root a[href^="https://cpmspace.com/"], :root [href^="https://freecourseweb.com/"] > .sitefriend, :root a[href^="https://ads.planetwin365affiliate.com/redirect.aspx?"], :root [href^="http://join.rodneymoore.com/"], :root [href^="https://shrugartisticelder.com"], :root a[href^="https://staRTgamIng.net/tienda/"], :root div[id^="lazyad-"], :root a[href^="http://com-1.pro/"], :root [name^="google_ads_iframe"], :root a[href^="http://bodelen.com/"], :root [href="https://www.masstortfinancing.com/"] > img, :root a[href^="https://www.geekbuying.com/dynamic-ads/"], :root a[href^="https://lnkxt.bannerator.com/"], :root [href="https://jdrucker.com/gold"] > img, :root [href^="https://v.investologic.co.uk/"], :root [href^="https://cipledecline.buzz/"], :root a[href^="https://go.xxxjmp.com"], :root #leader-companion > a[href], :root a[href^="https://jaxofuna.com/"], :root div[recirculation-ad-container], :root [href^="https://traffserve.com/"], :root [id^="ad_slider"], :root [data-adbridg-ad-class], :root a[href^="http://www.adultdvdempire.com/?partner_id="][href*="&utm_"], :root [href^="http://join.shemale.xxx/"], :root div[id^="div-ads-"], :root [href^="https://rapidgator.net/article/premium/ref/"], :root [href^="https://join3.bannedsextapes.com"], :root div[data-spotim-slot], :root [href^="https://antiagingbed.com/discount/"] > img, :root a[href^="https://go.247traffic.com/"], :root [href^="https://join.girlsoutwest.com/"], :root [href^="http://trafficare.net/"], :root [data-type="ad-vertical"], :root a[href^="https://u.expresstech.io/"], :root [href^="https://mypillow.com/"] > img, :root [href^="https://ad.admitad.com/"], :root [data-testid="ad_testID"], :root [href^="https://goldcometals.com/clk.trk"], :root a[href^="https://bodelen.com/"], :root [data-ad-name], :root a[href*=".g2afse.com/"], :root a[href^="https://go.hpyjmp.com"], :root a[href^="https://tour.mrskin.com/"], :root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="], :root [href^="https://mystore.com/"] > img, :root [data-mobile-ad-id], :root [data-ez-name], :root a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"], :root [data-dynamic-ads], :root a[href^="http://go.xtbaffiliates.com/"], :root a[href^="https://consali.com/"], :root .grid > .container > #aside-promotion, :root DFP-AD, :root [onclick*="content.ad/"], :root AMP-AD, :root a[href^="https://sTartGAMiNG.net/tienda/"], :root [data-ad-cls], :root [id^="ad-wrap-"], :root div[id^="taboola-stream-"], :root [href^="https://go.astutelinks.com/"], :root a[href^="http://tc.tradetracker.net/"] > img, :root a[href^="http://affiliates.thrixxx.com/"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root [data-template-type="nativead"], :root [class^="amp-ad-"], :root [href^="https://affiliate.fastcomet.com/"] > img, :root [class^="adDisplay-module"], :root AD-SLOT, :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root a[href^="https://www.liquidfire.mobi/"], :root [href^="https://click2cvs.com/"], :root .trc_related_container div[data-item-syndicated="true"], :root [href^="http://join.shemalepornstar.com/"], :root a[href^="https://go.xlviiirdr.com"], :root .trc_rbox_div .syndicatedItem, :root .plistaList > .itemLinkPET, :root [href^="https://gmxvmvptfm.com/"], :root div[data-adunit], :root app-large-ad, :root [href^="https://turtlebids.irauctions.com/"] img, :root a[href^="https://www.adskeeper.com"], :root [href^="https://totlnkcl.com/"], :root [data-ad-module], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root div[data-ad-targeting], :root a[href^="https://hotplaystime.life/"], :root a[href^="http://www.h4trck.com/"], :root [href^="https://trackfin.asia/"], :root .plistaList > .plista_widget_underArticle_item[data-type="pet"], :root a[href^="https://bs.serving-sys.com"], :root [href^="http://residenceseeingstanding.com/"], :root div[id^="pa_sticky_ad_box_middle_"], :root a[href^="http://www.onclickmega.com/jump/next.php?"], :root .trc_rbox_border_elm .syndicatedItem, :root a[href*="//lkstrck2.com/"], :root [class^="div-gpt-ad"], :root a[href^="https://ggbetpromo.com/"], :root a[href^="http://partners.etoro.com/"], :root [data-advadstrackid], :root a[href^="https://refpazkjixes.top/"], :root #mgb-container > #mgb, :root [href^="https://www.cloudways.com/en/?id"], :root [href^="https://safer-redirection.com"], :root a[href^="https://startgAming.net/tienda/"], :root a[href^="https://tweakostensibleinstaller.com/"], :root a[href^="https://go.xlivrdr.com"], :root a[href^="https://cam4com.go2cloud.org/"], :root a[href^="http://li.blogtrottr.com/click?"], :root [href^="//mage98rquewz.com/"], :root a[href^="https://webroutetrk.com/"], :root a[href^="https://mercurybest.com/"], :root [href^="https://www.restoro.com/"], :root div[id^="optidigital-adslot"], :root .resultsList > div > div > div > div.G-5c[role="tab"][tabindex="0"] > .yuAt-pres-rounded { display: none !important; }</style><script src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/iframe_api" type="text/javascript"></script><script src="chrome-extension://ocggccaacacpienfcgmgcihoombokbbj/pages/client/livestartpage-message-add.js"></script></head>
+
+<body class="post-template-default single single-post postid-4469 single-format-standard custom-background wp-custom-logo wp-embed-responsive no-sidebar narrow-1218">
+
+
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="https://neptunet.fr/install-glpi10/#main">Aller au contenu</a>
+
+	
+	
+	<header id="masthead" class="site-header clearfix spacious-header-display-four">
+
+		
+		
+		<div id="header-text-nav-container" class="">
+
+			<div class="inner-wrap" id="spacious-header-display-four">
+
+				<div id="header-text-nav-wrap" class="clearfix">
+					<div id="header-left-section">
+													<div id="header-logo-image">
+
+								<a href="https://neptunet.fr/" class="custom-logo-link" rel="home"><img width="77" height="77" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/logov2.png" class="custom-logo" alt="NEPTUNET.FR" decoding="async"></a>
+							</div><!-- #header-logo-image -->
+
+							
+						<div id="header-text" class="">
+															<h3 id="site-title">
+									<a href="https://neptunet.fr/" title="NEPTUNET.FR" rel="home">NEPTUNET.FR</a>
+								</h3>
+														<p id="site-description">Everything's under control <img draggable="false" role="img" class="emoji" alt="👁" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/1f441.svg"></p>
+							<!-- #site-description -->
+						</div><!-- #header-text -->
+
+					</div><!-- #header-left-section -->
+					<div id="header-right-section">
+													<div id="header-right-sidebar" class="clearfix">
+								<aside id="text-3" class="widget widget_text"><h3 class="widget-title">SysAdmin</h3>			<div class="textwidget"><p><span style="color: #1e73be;"><em>Ma base de </em><em>connaissances à ciel ouvert <img decoding="async" class="wp-image-115 alignnone" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/ico.png" alt="" width="34" height="30"></em></span></p>
+</div>
+		</aside>							</div>
+							
+						
+						
+					</div><!-- #header-right-section -->
+
+				</div><!-- #header-text-nav-wrap -->
+			</div><!-- .inner-wrap -->
+							<div class="bottom-menu clearfix ">
+					<div class="inner-wrap clearfix">
+						
+		<nav id="site-navigation" class="main-navigation clearfix   " role="navigation">
+			<p class="menu-toggle">
+				<span class="screen-reader-text">Menu</span>
+			</p>
+			<div class="menu-primary-container"><ul id="menu-haut" class="menu nav-menu"><li id="menu-item-57" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-57"><a href="https://neptunet.fr/" class="menu-image-title-after menu-image-not-hovered"><img width="36" height="36" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/2253-36x36.png" class="menu-image menu-image-title-after" alt="" decoding="async"><span class="menu-image-title-after menu-image-title">Accueil</span></a></li>
+<li id="menu-item-2652" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2652"><a href="https://neptunet.fr/category/decouvrir/" class="menu-image-title-after menu-image-not-hovered"><img width="36" height="36" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/39776-1-36x36.png" class="menu-image menu-image-title-after" alt="" decoding="async"><span class="menu-image-title-after menu-image-title">Découvrir</span></a></li>
+<li id="menu-item-273" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-273"><a href="https://neptunet.fr/category/systeme/" class="menu-image-title-after menu-image-not-hovered"><img width="34" height="36" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/366202.png" class="menu-image menu-image-title-after" alt="" decoding="async"><span class="menu-image-title-after menu-image-title">Système</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-2653" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2653"><a href="https://neptunet.fr/category/systeme/roles-et-services/">Rôles et services serveurs</a>
+	<ul class="sub-menu">
+		<li id="menu-item-331" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-331"><a href="https://neptunet.fr/category/systeme/roles-et-services/active-directory/">Active Directory</a></li>
+		<li id="menu-item-3101" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3101"><a href="https://neptunet.fr/category/systeme/roles-et-services/deploiement/">Déploiement</a></li>
+		<li id="menu-item-1137" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1137"><a href="https://neptunet.fr/category/systeme/roles-et-services/dhcp/">DHCP</a></li>
+		<li id="menu-item-2390" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2390"><a href="https://neptunet.fr/category/systeme/roles-et-services/dns/">DNS</a></li>
+		<li id="menu-item-2655" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2655"><a href="https://neptunet.fr/category/systeme/roles-et-services/fichiers/">Fichiers</a></li>
+		<li id="menu-item-2656" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2656"><a href="https://neptunet.fr/category/systeme/roles-et-services/messagerie/">Messagerie</a></li>
+		<li id="menu-item-2657" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2657"><a href="https://neptunet.fr/category/systeme/roles-et-services/web/">Web</a></li>
+		<li id="menu-item-4129" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4129"><a href="https://neptunet.fr/category/systeme/roles-et-services/wsus/">WSUS</a></li>
+	</ul>
+</li>
+	<li id="menu-item-255" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-255"><a href="https://neptunet.fr/category/systeme/scripting/">Scripting</a>
+	<ul class="sub-menu">
+		<li id="menu-item-265" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-265"><a href="https://neptunet.fr/category/systeme/scripting/bash/">Bash</a></li>
+		<li id="menu-item-266" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-266"><a href="https://neptunet.fr/category/systeme/scripting/powershell/">Powershell</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2654" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2654"><a href="https://neptunet.fr/category/systeme/clients/">Clients</a></li>
+</ul>
+</li>
+<li id="menu-item-257" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-257"><a href="https://neptunet.fr/category/reseau/" class="menu-image-title-after menu-image-not-hovered"><img width="36" height="36" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/Capture-36x36.png" class="menu-image menu-image-title-after" alt="" decoding="async"><span class="menu-image-title-after menu-image-title">Réseau</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-927" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-927"><a href="https://neptunet.fr/category/reseau/cloud-aws/">Cloud AWS</a></li>
+	<li id="menu-item-258" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-258"><a href="https://neptunet.fr/category/reseau/firewall/">Firewall</a></li>
+	<li id="menu-item-259" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-259"><a href="https://neptunet.fr/category/reseau/monitoring/">Monitoring</a></li>
+	<li id="menu-item-270" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-270"><a href="https://neptunet.fr/category/reseau/routage-commutation/">Routage &amp; Commutation</a></li>
+	<li id="menu-item-271" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-271"><a href="https://neptunet.fr/category/reseau/voip/">VOIP</a></li>
+	<li id="menu-item-272" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-272"><a href="https://neptunet.fr/category/reseau/vpn/">VPN</a></li>
+</ul>
+</li>
+<li id="menu-item-260" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-260"><a href="https://neptunet.fr/category/logiciels/" class="menu-image-title-after menu-image-not-hovered"><img width="36" height="36" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/36358-36x36.png" class="menu-image menu-image-title-after" alt="" decoding="async"><span class="menu-image-title-after menu-image-title">Logiciels</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-261" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-261"><a href="https://neptunet.fr/category/logiciels/cisco-packet-tracer/">Cisco Packet Tracer</a></li>
+	<li id="menu-item-3181" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-3181"><a href="https://neptunet.fr/category/logiciels/glpi/">GLPI</a></li>
+	<li id="menu-item-2294" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2294"><a href="https://neptunet.fr/category/logiciels/virtualbox/">VirtualBox</a></li>
+	<li id="menu-item-269" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-269"><a href="https://neptunet.fr/category/logiciels/vmware/">VMware Workstation</a></li>
+	<li id="menu-item-264" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-264"><a href="https://neptunet.fr/category/logiciels/wordpress-cms/">WordPress CMS</a></li>
+</ul>
+</li>
+<li id="menu-item-1354" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1354"><a href="https://neptunet.fr/category/astuces/" class="menu-image-title-after menu-image-not-hovered"><img width="27" height="36" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/39071-Copie.png" class="menu-image menu-image-title-after" alt="" decoding="async"><span class="menu-image-title-after menu-image-title">Astuces</span></a></li>
+<li id="menu-item-325" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-325"><a href="https://neptunet.fr/category/jokes/" class="menu-image-title-after menu-image-not-hovered"><img width="36" height="36" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/47779-36x36.png" class="menu-image menu-image-title-after" alt="" decoding="async"><span class="menu-image-title-after menu-image-title">Jokes</span></a></li>
+<li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="https://neptunet.fr/contact/" class="menu-image-title-after menu-image-not-hovered"><img width="36" height="36" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/10025-36x36.png" class="menu-image menu-image-title-after" alt="" decoding="async"><span class="menu-image-title-after menu-image-title">Contact</span></a></li>
+</ul></div>		</nav>
+
+		
+						<div class="header-action">
+													</div>
+					</div>
+				</div>
+					</div><!-- #header-text-nav-container -->
+
+		<div id="wp-custom-header" class="wp-custom-header"><img src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/cropped-banner22.jpg" class="header-image" width="1500" height="428" alt="NEPTUNET.FR"></div>
+						<div class="header-post-title-container clearfix">
+					<div class="inner-wrap">
+						<div class="post-title-wrapper">
+																								<h1 class="header-post-title-class">[Tuto] Installer GLPI 10 sous Debian 12</h1>
+																						</div>
+											</div>
+				</div>
+					</header>
+			<div id="main" class="clearfix">
+		<div class="inner-wrap">
+
+	
+	<div id="primary">
+		<div id="content" class="clearfix">
+			
+				
+<article id="post-4469" class="post-4469 post type-post status-publish format-standard has-post-thumbnail hentry category-glpi category-linux category-logiciels">
+		<div class="entry-content clearfix">
+		<p style="text-align: justify;">Au programme dans ce post, <strong>installation de GLPI 10.x sur une VM Debian</strong> <em>(sans GUI)</em>. De grosses modifications au niveau <strong>recommandations et prérequis sont arrivées depuis la version 10.0.7 de GLPI</strong>, aussi vu les nombreuses demandes par mail émises ces derniers temps, cet article s’efforcera de les respecter le plus possible mais certaines configurations ne sont pas obligatoires, <span style="text-decoration: underline;">à vous de voir à quel point vous souhaitez pousser votre install</span>. N’oubliez pas également d’adapter le tuto selon votre infra car ce n’est ici qu’une base.</p>
+<p style="text-align: justify;">Comme le dit souvent un gars en rouge qui saute sur des tortues, navigue dans des tuyaux et balance des saloperies de peaux de bananes : Let’s go ! <img decoding="async" class="kws-smiley" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/laugh.gif" alt="laugh"></p>
+<hr>
+<h3><span style="color: #3366ff;"><strong>Installation de GLPI 10 sous Debian 12</strong></span></h3>
+<p style="text-align: justify;">GLPI est une solution logicielle <strong>open source</strong> qui permet de <strong>traiter les demandes de support</strong> des utilisateurs et de <strong>gérer son parc</strong> informatique, c’est un outil ITSM.</p>
+<table style="width: 100.486%; height: 10px;">
+<tbody>
+<tr style="height: 10px;">
+<td style="background-color: #d9e9ff; border-color: #dcdee3; width: 100px; height: 10px; text-align: left; vertical-align: middle;">
+<p style="text-align: justify;"><em><span style="font-size: 10pt;"><span style="text-decoration: underline;">Info +</span> : Pour plus d’informations sur GLPI, consulter l’article <a href="https://neptunet.fr/glpi/" target="_blank" rel="noopener">Introduction au logiciel GLPI</a></span></em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Il est possible de l’installer sur des machines <strong>Linux, Mac et Windows</strong> mais j’ai fait le choix de l’installer sur une machine Debian en version 12.1 sans interface graphique.</p>
+<p style="text-align: justify;">La Debian est ici une machine virtuelle avec les configurations suivantes&nbsp;:</p>
+<ul>
+<li style="list-style-type: none;">
+<ul style="list-style-type: circle;">
+<li style="text-align: justify;"><strong>CPU</strong> : 2 <em>(1 mini)</em></li>
+<li style="text-align: justify;"><strong>RAM</strong> : 4 Go <em>(2 Go mini)</em></li>
+<li style="text-align: justify;"><strong>Stockage</strong> : 20Go</li>
+<li style="text-align: justify;"><strong>Réseau</strong> : Bridged <em>(accès par pont)</em></li>
+<li style="text-align: justify;"><strong>Adresse IP</strong> : récupération automatique depuis le DHCP (<em>IP, Masque, Passerelle et DNS)</em></li>
+</ul>
+</li>
+</ul>
+<table style="width: 100.486%; height: 10px;">
+<tbody>
+<tr style="height: 10px;">
+<td style="background-color: #d9e9ff; border-color: #dcdee3; width: 100px; height: 10px; text-align: left; vertical-align: middle;">
+<p style="text-align: justify;"><span style="font-size: 10pt;"><strong style="font-size: 10pt;"><img decoding="async" class="alignleft wp-image-916" style="font-family: inherit; font-size: inherit;" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/ytb.png" alt="" width="64" height="44">Démonstration en vidéo disponible au lien suivant : <em><u><a href="https://youtu.be/g7slFRnUN-Y" target="_blank" rel="noopener noreferrer">Installer GLPI 10 sous Debian 12</a></u></em></strong><em style="font-size: 10pt;">. </em><span style="font-size: 10pt;"><em><b style="font-size: 10pt;">La vidéo peut </b><span style="font-size: 13.3333px;"><b>différer</b></span><b style="font-size: 10pt;"> quelque peu de l’article (installation de GLPI version 10.0.9 sur la vidéo), elle n’est là que pour illustrer ce tuto et aider à mieux visualiser les manipulations.</b><br>
+</em></span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="color: #3366ff; font-size: 14pt;"><strong>⇒</strong> </span><span style="font-size: 14pt;"><strong><span style="text-decoration: underline;">Accès rapide aux différentes parties de cet article</span>&nbsp;:&nbsp;</strong></span></p>
+<ol>
+<li style="list-style-type: none;">
+<ol>
+<li style="list-style-type: none;">
+<ol>
+<li><a href="https://neptunet.fr/install-glpi10/#1">BONUS : Contrôle à distance de la machine Debian en SSH</a></li>
+<li><a href="https://neptunet.fr/install-glpi10/#2">Installation des packages nécessaires sur le serveur</a></li>
+<li><a href="https://neptunet.fr/install-glpi10/#3">Configuration du service de bases de données</a></li>
+<li><a href="https://neptunet.fr/install-glpi10/#4">Téléchargement de GLPI</a></li>
+<li><a href="https://neptunet.fr/install-glpi10/#5">FACULTATIF : Configuration des emplacements des dossiers et fichiers de GLPI</a></li>
+<li><a href="https://neptunet.fr/install-glpi10/#6">FACULTATIF : Configuration du service web</a></li>
+<li><a href="https://neptunet.fr/install-glpi10/#7">Configuration finale de GLPI via interface web</a></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>&nbsp;</p>
+<p id="1" style="padding-left: 40px;"><span style="color: #3366ff;"><strong><span style="font-size: 14pt;">1. <span style="text-decoration: underline;">BONUS : Contrôle à distance de la machine Debian en SSH&nbsp;</span></span></strong></span></p>
+<p style="text-align: justify;">Avant de démarrer la réalisation de ce tuto,<strong> je vous conseille plus que vivement d’installer OpenSSH Server</strong> sur la VM Debian, cela est plus pratique pour administrer un serveur Linux distant <em>(et faire des copier/coller de texte</em> <img decoding="async" class="kws-smiley" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/laugh.gif" alt="laugh"><em> )</em>. Voici la commande :</p>
+<table style="border-collapse: collapse; width: 100%;">
+<tbody>
+<tr>
+<td style="width: 100%; background-color: #000000;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">apt install openssh-server -y</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"><strong>Et c’est tout !</strong> A partir de ce point, vous pouvez directement vous connectez à distance à la machine en utilisant un <strong>terminal</strong> ou via un émulateur de terminal tel que <a href="https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe" target="_blank" rel="noopener">Putty</a>.</p>
+<p style="text-align: justify;">Récupérez au préalable l’IP de la machine GLPI avec la commande «&nbsp;<strong>ip a&nbsp;</strong>»&nbsp;:</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/01-ip-a-1.png" target="_blank" rel="noopener"><img decoding="async" class="aligncenter wp-image-5135 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/01-ip-a-1.png" alt="" width="505" height="208" srcset="https://neptunet.fr/wp-content/uploads/2022/12/01-ip-a-1.png 505w, https://neptunet.fr/wp-content/uploads/2022/12/01-ip-a-1-300x124.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/01-ip-a-1-24x10.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/01-ip-a-1-36x15.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/01-ip-a-1-48x20.png 48w" sizes="(max-width: 505px) 100vw, 505px"></a></p>
+<p style="text-align: justify;">Si vous utilisez un terminal classique type <strong>invite de commande</strong> chez Windows, tapez la commande suivante pour vous connecter&nbsp;:</p>
+<table style="border-collapse: collapse; width: 100%;">
+<tbody>
+<tr>
+<td style="width: 100%; background-color: #000000;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">ssh nom-user@IP-ou-nom-serveurGLPI</span></td>
+</tr>
+</tbody>
+</table>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/02-ssh-cmd-1.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5136 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/02-ssh-cmd-1.png" alt="" width="619" height="101" srcset="https://neptunet.fr/wp-content/uploads/2022/12/02-ssh-cmd-1.png 619w, https://neptunet.fr/wp-content/uploads/2022/12/02-ssh-cmd-1-300x49.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/02-ssh-cmd-1-24x4.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/02-ssh-cmd-1-36x6.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/02-ssh-cmd-1-48x8.png 48w" sizes="(max-width: 619px) 100vw, 619px"></a></p>
+<table style="width: 100.486%; height: 10px;">
+<tbody>
+<tr style="height: 10px;">
+<td style="background-color: #d9e9ff; border-color: #dcdee3; width: 100px; height: 10px; text-align: left; vertical-align: middle;">
+<p style="text-align: justify;"><em><span style="font-size: 10pt;"><span style="text-decoration: underline;">Info +</span> : Par défaut et par mesure de sécurité, le compte root ne peut pas se connecter en ssh. Il faut donc utiliser un autre compte disposant des droits sudo de préférence, comme par exemple celui que vous avez créé lors de l’installation de Debian.</span></em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Si vous utilisez Putty, <strong>saisissez simplement l’adresse IP</strong> ou le nom du serveur GLPI en veillant bien à ce que <strong>le port soit le 22</strong> <em>(port par défaut du protocole SSH)</em> et cliquez sur Open <em>(ou faites Entrée)</em>.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/03-putty1-1.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5137 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/03-putty1-1.png" alt="" width="452" height="442" srcset="https://neptunet.fr/wp-content/uploads/2022/12/03-putty1-1.png 452w, https://neptunet.fr/wp-content/uploads/2022/12/03-putty1-1-300x293.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/03-putty1-1-24x24.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/03-putty1-1-36x36.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/03-putty1-1-48x48.png 48w" sizes="(max-width: 452px) 100vw, 452px"></a></p>
+<p style="text-align: justify;">S’il s’agit de la 1<sup>ère</sup> connexion distance au serveur depuis votre machine, vous verrez un message d’avertissement <em>(que vous passiez par putty ou non)</em>, <strong>cliquez simplement sur OUI ou saisissez YES pour continuer.</strong></p>
+<p style="text-align: justify;">Vous pouvez ensuite vous connecter avec un <strong>compte utilisateur</strong> <em>(une fois encore pas le compte root mais un user qui a les droits sudo de préférence sinon vous serez vite bridé…).</em></p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/03-putty2.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5138 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/03-putty2.png" alt="" width="280" height="36" srcset="https://neptunet.fr/wp-content/uploads/2022/12/03-putty2.png 280w, https://neptunet.fr/wp-content/uploads/2022/12/03-putty2-270x36.png 270w, https://neptunet.fr/wp-content/uploads/2022/12/03-putty2-24x3.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/03-putty2-36x5.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/03-putty2-48x6.png 48w" sizes="(max-width: 280px) 100vw, 280px"></a></p>
+<p style="text-align: justify;">Vous pouvez ensuite <strong>passer en super utilisateur root</strong> si vous le souhaitez avec la <strong>commande «&nbsp;su&nbsp;– »</strong>. Il ne vous restera qu’à saisir le mot de passe du compte root.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/03-putty3.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5139 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/03-putty3.png" alt="" width="167" height="52" srcset="https://neptunet.fr/wp-content/uploads/2022/12/03-putty3.png 167w, https://neptunet.fr/wp-content/uploads/2022/12/03-putty3-24x7.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/03-putty3-36x11.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/03-putty3-48x15.png 48w" sizes="(max-width: 167px) 100vw, 167px"></a></p>
+<p style="text-align: justify;">C’est tout pour cette étape “bonus”, passons maintenant au sujet qui nous intéresse <img decoding="async" class="kws-smiley" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/smile.gif" alt="smile"></p>
+<p>&nbsp;</p>
+<p id="2" style="padding-left: 40px;"><span style="color: #3366ff;"><strong><span style="font-size: 14pt;">2. <span style="text-decoration: underline;">Installation des packages nécessaires sur le serveur</span></span></strong></span></p>
+<p>Bon c’est bon, tout le monde est prêt ? OK !</p>
+<p style="text-align: justify;">Alors comme d’habitude, on commence comme par <strong>mettre à jour la machine</strong> avec la commande suivante :</p>
+<table style="border-collapse: collapse; width: 100%;">
+<tbody>
+<tr>
+<td style="width: 100%; background-color: #000000;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">apt update &amp;&amp; apt upgrade -y</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">On va <strong>installer les applications nécessaires </strong>pour transformer notre serveur en <strong>LAMP.</strong></p>
+<table style="width: 100.486%; height: 10px;">
+<tbody>
+<tr style="height: 10px;">
+<td style="background-color: #f5bfbf; border-color: #dcdee3; width: 100px; height: 10px; text-align: left; vertical-align: middle;">
+<p style="text-align: justify;"><span style="font-size: 10pt;"><em><span style="text-decoration: underline;">Info ++</span> : Selon les prérequis de GLPI, la version minimum de PHP supportée au moment de la rédaction de cet article (juillet 2023) est la 7.4. Cette version de PHP n’est plus maintenue et va provoquer une petite alerte sur votre GLPI. Il est fortement recommandé d’utiliser au minimum la version 8.2 de PHP actuellement. </em></span><em><span style="font-size: 10pt;">Attention cependant&nbsp;: PHP en version 8.x est disponible directement dans les dépôts de Debian 12&nbsp; Bookworm, il n’est donc pas nécessaire de préciser la version lors de l’installation des packages. Par contre ce n’est pas le cas par défaut sous Debian 11 ou antérieur qui installeront la 7.4, dans ce cas il faudra préciser «&nbsp;php8.2&nbsp;» par exemple ou encore «&nbsp;php8.2-ldap&nbsp;» pour une extension lors de l’installation du package.</span></em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="border-collapse: collapse; width: 100%;">
+<tbody>
+<tr>
+<td style="width: 100%; background-color: #000000;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">apt install apache2 php mariadb-server -y</span></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100.486%; height: 10px;">
+<tbody>
+<tr style="height: 10px;">
+<td style="background-color: #d9e9ff; border-color: #dcdee3; width: 100px; height: 10px; text-align: left; vertical-align: middle;">
+<p style="text-align: justify;"><em><span style="font-size: 10pt;"><span style="text-decoration: underline;">Info +</span> : </span><span style="font-size: 10pt;">LAMP signifie L pour Linux qui est le système d’exploitation, A pour le service web qui est Apache2 (Si vous utilisez le service web Nginx à la place d’Apache2, cela devient LEMP), M pour le service de bases de données MariaDB ou MySQL et P pour le langage PHP. Toutes ces applications mises ensemble forment ce qu’on appelle une «&nbsp;pile LAMP&nbsp;», on peut voir cela comme une «&nbsp;méga-appli&nbsp;». Sous Windows, cela s’appelle WAMP, sous MAC OS ça sera MAMP. Il existe également XAMPP, le X signifie compatible multiplateforme donc utilisable sous Windows, Mac et Linux, et le second P représentant le langage Perl.</span></em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Ensuite, nous allons installer toutes les <strong>dépendances donc pourrait avoir besoin GLPI</strong> <em>(elles ne sont pas toutes obligatoires/utiles mais pour éviter les problèmes par la suite, nous installons tout d’un coup</em> <img decoding="async" class="kws-smiley" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/cool.gif" alt="cool"> <em>).</em></p>
+<table style="border-collapse: collapse; width: 100%;">
+<tbody>
+<tr>
+<td style="width: 100%; background-color: #000000;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">apt install php-mysql php-mbstring php-curl php-gd php-xml php-intl php-ldap php-apcu php-xmlrpc php-zip php-bz2 php-imap -y</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Voilà qui est fait, jusqu’ici tout va bien. <img decoding="async" class="kws-smiley" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/smile.gif" alt="smile"></p>
+<p>&nbsp;</p>
+<p id="3" style="padding-left: 40px;"><span style="color: #3366ff;"><strong><span style="font-size: 14pt;">3. <span style="text-decoration: underline;">Configuration du service de bases de données</span></span></strong></span></p>
+<p style="text-align: justify;">Nous allons maintenant <strong>sécuriser l’accès au service de base de données</strong>. Lancez la commande suivante&nbsp;:</p>
+<table style="border-collapse: collapse; width: 100%;">
+<tbody>
+<tr>
+<td style="width: 100%; background-color: #000000;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">mysql_secure_installation</span></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100.486%; height: 10px;">
+<tbody>
+<tr style="height: 10px;">
+<td style="background-color: #d9e9ff; border-color: #dcdee3; width: 100px; height: 10px; text-align: left; vertical-align: middle;">
+<p style="text-align: justify;"><em><span style="font-size: 10pt;"><span style="text-decoration: underline;">Info +</span> : </span><span style="font-size: 10pt;">La commande «&nbsp;mariadb-secure-installation&nbsp;» fonctionnera également de la même façon, j’utilise toujours directement les commandes de mysql par habitude seulement. </span></em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Le mot de passe de l’utilisateur root est demandé. <span style="text-decoration: underline;"><strong>Il ne s’agit pas ici du mot de passe de l’utilisateur root sur la machine elle-même mais de l’utilisateur SQL</strong></span> <em>(base de données)</em>. A ce stade, aucun mot de passe ne lui a été configuré, c’est donc ce que nous allons faire. <strong>Appuyez simplement sur Entrée</strong>.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-07.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5160 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-07.png" alt="" width="559" height="170" srcset="https://neptunet.fr/wp-content/uploads/2022/12/glpi10-07.png 559w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-07-300x91.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-07-24x7.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-07-36x11.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-07-48x15.png 48w" sizes="(max-width: 559px) 100vw, 559px"></a></p>
+<p>Aux questions posées,<strong> appuyez sur Entrée pour répondre « yes »</strong> directement.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-08.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5157 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-08.png" alt="" width="341" height="151" srcset="https://neptunet.fr/wp-content/uploads/2022/12/glpi10-08.png 341w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-08-300x133.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-08-24x11.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-08-36x16.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-08-48x21.png 48w" sizes="(max-width: 341px) 100vw, 341px"></a></p>
+<p style="text-align: justify;">L’une des questions vous demande justement si vous voulez attribuer un mot de passe au <strong>compte root pour accéder au service de base de données</strong>.&nbsp;Appuyez sur&nbsp;<strong>Entrée</strong> pour dire Oui.</p>
+<p style="text-align: justify;"><strong>Saisissez 2 fois le mot de passe</strong>&nbsp;que vous voulez donner au compte SQL root pour.<strong>&nbsp;Attention, aucun symbole ne va s’afficher pendant la saisie, soyez vigilant&nbsp;à votre frappe&nbsp;!</strong></p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-09.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5158 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-09.png" alt="" width="250" height="101" srcset="https://neptunet.fr/wp-content/uploads/2022/12/glpi10-09.png 250w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-09-24x10.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-09-36x15.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-09-48x19.png 48w" sizes="(max-width: 250px) 100vw, 250px"></a></p>
+<p style="text-align: justify;">Vous pourrez par la suite répondre<strong> Yes à toutes les autres questions</strong> posées.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-10.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5159 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-10.png" alt="" width="585" height="514" srcset="https://neptunet.fr/wp-content/uploads/2022/12/glpi10-10.png 585w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-10-300x264.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-10-24x21.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-10-36x32.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-10-48x42.png 48w" sizes="(max-width: 585px) 100vw, 585px"></a></p>
+<p style="text-align: justify;">Maintenant que l’accès aux bases de données est sécurisé, nous allons pouvoir nous y <strong>connecter avec le compte root</strong> et le mot de passe que nous venons de lui définir&nbsp;:</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">mysql -u root -p</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Il faut <strong>créer la base de données</strong> qui sera utilisée par GLPI et un <strong>utilisateur de base de données qui aura les pleins pouvoirs</strong> sur celle-ci. Voici les <strong>3 commandes</strong> à saisir pour cela <em>(les&nbsp;; sont nécessaires)</em>&nbsp;:</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">create database db_glpi;<br>
+grant all privileges on db_glpi.* to admindb_glpi@localhost identified by <code>"votre-MDP"</code>;<br>
+exit</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Quelques explications rapides sur ces commandes :</p>
+<ul>
+<li style="text-align: justify;">La 1<sup>ère</sup> va <strong>créer une base de données appelée «&nbsp; db_glpi »</strong>, à vous de donner le nom qu’il vous plaira.</li>
+<li style="text-align: justify;">La 2<sup>nde</sup> va à la fois c<strong>réer un utilisateur ici nommé « admindb_glpi », lui attribuer le mot de passe « votre-MDP » et lui donner tous les privilèges</strong> <em>(une sorte de « contrôle total » sur la base de données « db_glpi »)</em>. Une fois encore, à vous de définir les noms que vous souhaitez.</li>
+<li style="text-align: justify;">La commande exit <em>(ou quit)</em> sert simplement à <strong>quitter le service SQL</strong> et revenir dans le terminal.</li>
+</ul>
+<p style="text-align: justify;"><strong>La base de données est prête</strong>, passons maintenant au téléchargement de GLPI sur notre serveur !</p>
+<p>&nbsp;</p>
+<p id="4" style="padding-left: 40px;"><span style="color: #3366ff;"><strong><span style="font-size: 14pt;">4. <span style="text-decoration: underline;">Téléchargement de GLPI</span></span></strong></span></p>
+<table style="width: 100.486%; height: 10px;">
+<tbody>
+<tr style="height: 10px;">
+<td style="background-color: #f5bfbf; border-color: #dcdee3; width: 100px; height: 10px; text-align: left; vertical-align: middle;">
+<p style="text-align: justify;"><span style="font-size: 10pt;"><em><span style="text-decoration: underline;">Info ++</span> : La version déployée dans ce tuto est la dernière disponible au moment de la rédaction. Pensez donc bien à adapter les commandes qui vont suivre avec vos numéros de version. Pour connaître la dernière version stable publiée, rendez-vous sur le <a href="https://glpi-project.org/fr/telecharger-glpi/" target="_blank" rel="noopener noreferrer">site officiel de GLPI</a> ou dans le <a href="https://github.com/glpi-project/glpi/releases" target="_blank" rel="noopener noreferrer">dépôt Github du projet GLPI.</a></em></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Placez vous dans le répertoire de votre choix <em>(moi perso c’est dans le dossier temporaire /tmp)</em><strong><em>&nbsp;</em>et téléchargez la dernière version</strong> disponible de GLPI sur Github :</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">cd /tmp<br>
+wget https://github.com/glpi-project/glpi/releases/download/10.0.10/glpi-10.0.10.tgz<br>
+</span></td>
+</tr>
+</tbody>
+</table>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-11-2.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5564 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-11-2.png" alt="" width="767" height="21" srcset="https://neptunet.fr/wp-content/uploads/2022/12/glpi10-11-2.png 767w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-11-2-300x8.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-11-2-750x21.png 750w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-11-2-24x1.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-11-2-36x1.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-11-2-48x1.png 48w" sizes="(max-width: 767px) 100vw, 767px"></a></p>
+<p style="text-align: justify;"><strong>Décompressez l’archive</strong> de GLPI directement dans le<strong> répertoire par défaut du service we</strong>b qui est /var/www/html :</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">tar -xvzf glpi-10.0.10.tgz -C /var/www/html</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Rendez l’<strong>utilisateur des services web</strong> <em>(nommé www-data)</em> <strong>propriétaire</strong> de ces nouveaux fichiers&nbsp;:</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">chown -R www-data /var/www/html</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Vous pouvez vérifier que tout est OK en <strong>listant le contenu du répertoire</strong> avec la commande «&nbsp;ls -l /var/www/html&nbsp;». Vous pourrez alors constater la <strong>présence du répertoire glpi</strong> et que le propriétaire est bien l’utilisateur nommé «&nbsp;www-data&nbsp;».</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-12.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5164 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-12.png" alt="" width="477" height="82" srcset="https://neptunet.fr/wp-content/uploads/2022/12/glpi10-12.png 477w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-12-300x52.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-12-24x4.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-12-36x6.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-12-48x8.png 48w" sizes="(max-width: 477px) 100vw, 477px"></a></p>
+<p style="text-align: justify;"><strong>GLPI est en place&nbsp;!</strong></p>
+<p style="text-align: center;"><span style="color: #ff0000;"><strong>—————————</strong></span></p>
+<p style="text-align: justify;"><span style="color: #ff0000; font-size: 14pt;"><strong>A partir de ce point, GLPI est presque déjà fonctionnel. Cependant, afin de respecter les recommandations de l’éditeur et de sécuriser un peu tout cela, ils restent encore quelques étapes importantes. <span style="text-decoration: underline;">Les configurations décrites dans les 2 chapitres suivants ne sont pas obligatoires mais fortement recommandées</span>. Si vous ne souhaitez pas les suivre, rendez-vous dès maintenant au chapitre 7 : <a href="https://neptunet.fr/install-glpi10/#7">Configuration finale de GLPI via interface web</a></strong></span></p>
+<p style="text-align: center;"><span style="color: #ff0000;"><strong>—————————</strong></span></p>
+<p id="5" style="padding-left: 40px;"><span style="color: #3366ff;"><strong><span style="font-size: 14pt;">5. <span style="text-decoration: underline;">FACULTATIF : Configuration des emplacements des dossiers et fichiers de GLPI</span></span></strong></span></p>
+<p style="text-align: justify;">Nous allons suivre une partie de recommandations de GLPI présentent dans la <a href="https://glpi-install.readthedocs.io/fr/latest/install/index.html" target="_blank" rel="noopener">documentation.</a> Nous allons séparer une partie des fichiers de GLPI afin de sécuriser le tout un minimum.</p>
+<p style="text-align: justify;">Créez un dossier nommé <strong>« glpi » dans /etc</strong> :</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">mkdir /etc/glpi<br>
+</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Dans ce nouveau dossier, <strong>créez un fichier nommé « local_define.php »</strong> :</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">nano /etc/glpi/local_define.php</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Y insérer le contenu suivant&nbsp;<em>(bien respecter la syntaxe)</em> :</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">&lt;?php<br>
+define(<code>'</code>GLPI_VAR_DIR<code>'</code>, <code>'</code>/var/lib/glpi<code>'</code>);<br>
+define(<code>'</code>GLPI_LOG_DIR<code>'</code>, <code>'</code>/var/log/glpi<code>'</code>);<br>
+</span></td>
+</tr>
+</tbody>
+</table>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-13.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5166 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-13.png" alt="" width="509" height="210" srcset="https://neptunet.fr/wp-content/uploads/2022/12/glpi10-13.png 509w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-13-300x124.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-13-24x10.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-13-36x15.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-13-48x20.png 48w" sizes="(max-width: 509px) 100vw, 509px"></a></p>
+<p style="text-align: justify;">Quittez le fichier en appuyant sur les touches<strong> Ctrl + X</strong>, puis ensuite sur <strong>O</strong> pour valider l’enregistrement des modifications puis sur la touche <strong>Entrée</strong> pour conserver le nom du fichier.</p>
+<p style="text-align: justify;"><strong>Déplacez le dossier « config »</strong> situé actuellement dans /var/www/html/glpi dans /etc/glpi :</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">mv /var/www/html/glpi/config /etc/glpi</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Rendez<strong>&nbsp;www-data propriétaire</strong>&nbsp;de /etc/glpi et de son contenu :</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">chown -R www-data /etc/glpi/</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">N’oubliez pas vous pouvez <strong>vérifier le contenu d’un dossier et le propriétaire</strong> de ce contenu grâce à la commande «&nbsp;ls -l /etc/glpi&nbsp;»&nbsp;:</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-14.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5167 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-14.png" alt="" width="513" height="66" srcset="https://neptunet.fr/wp-content/uploads/2022/12/glpi10-14.png 513w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-14-300x39.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-14-24x3.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-14-36x5.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-14-48x6.png 48w" sizes="(max-width: 513px) 100vw, 513px"></a></p>
+<p style="text-align: justify;">Poursuivons en <strong>déplaçant le dossier «&nbsp;files »</strong> de glpi dans /var/lib/glpi&nbsp;:</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">mv /var/www/html/glpi/files /var/lib/glpi</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Ensuite nous allons<strong> préparer le dossier de logs de GLPI</strong> et rendre, une fois encore, l’utilisateur<strong> www-data propriétaire</strong> avec les 2 commandes suivantes :</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">mkdir /var/log/glpi<br>
+chown www-data /var/log/glpi</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Il va maintenant falloir<strong> faire comprendre à GLPI où il va devoir chercher les fichiers et ses configs</strong>. Cela est en fait décrit dans le fichier « local_define.php » que l’on a créé précédemment mais il faut tout de même dire à GLPI d’aller <strong>checker cela dans /etc/glpi</strong> car il ne peut pas le deviner. <img decoding="async" class="kws-smiley" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/smile.gif" alt="smile"></p>
+<p style="text-align: justify;">Pour cela, <strong>créez un fichier nommé «&nbsp;downstream.php&nbsp;»</strong> dans /var/www/html/glpi/inc&nbsp;:</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">nano /var/www/html/glpi/inc/downstream.php</span></td>
+</tr>
+</tbody>
+</table>
+<p>Y insérer le contenu suivant&nbsp;<em>(bien respecter la syntaxe)</em> :</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">&lt;?php<br>
+define(<code>'</code>GLPI_CONFIG_DIR<code>'</code>, <code>'</code>/etc/glpi/<code>'</code>);<br>
+if (file_exists(GLPI_CONFIG_DIR . <code>'</code>/local_define.php<code>'</code>)) {<br>
+require_once GLPI_CONFIG_DIR . <code>'</code>/local_define.php<code>'</code>;<br>
+}<br>
+</span></td>
+</tr>
+</tbody>
+</table>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-15.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5168 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-15.png" alt="" width="549" height="194" srcset="https://neptunet.fr/wp-content/uploads/2022/12/glpi10-15.png 549w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-15-300x106.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-15-24x8.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-15-36x13.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-15-48x17.png 48w" sizes="(max-width: 549px) 100vw, 549px"></a></p>
+<p style="text-align: justify;"><strong>Voilà pour les emplacements recommandés</strong>. Passons ensuite à l’étape suivante : la configuration d’Apache, le service web.</p>
+<p>&nbsp;</p>
+<p id="6" style="padding-left: 40px;"><span style="color: #3366ff;"><strong><span style="font-size: 14pt;">6. <span style="text-decoration: underline;">FACULTATIF : Configuration du service web</span></span></strong></span></p>
+<p style="text-align: justify;">Nous allons <strong>modifier le fichier php.ini</strong> situé dans /etc/php/votre-version-de-php/apache2 <em>(pour moi php version 8.2)</em> :</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">nano /etc/php/8.2/apache2/php.ini</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Dans ce fichier, sans rien toucher d’autres, r<strong>echerchez la ligne « session.cookie_httponly&nbsp; = »</strong> <strong>et ajoutez « on » après le égal</strong>. Vous pouvez ensuite quitter le fichier en enregistrant les modifications et sans le renommer. Cette manipulation aura pour but de refuser l’accès à un cookie issu d’un langage de navigateur type javascript, car ils peuvent être corrompus et donc infecter le système.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-05.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5151 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-05.png" alt="" width="296" height="67" srcset="https://neptunet.fr/wp-content/uploads/2022/12/glpi10-05.png 296w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-05-24x5.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-05-36x8.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-05-48x11.png 48w" sizes="(max-width: 296px) 100vw, 296px"></a></p>
+<table style="width: 100.486%; height: 10px;">
+<tbody>
+<tr style="height: 10px;">
+<td style="background-color: #d9e9ff; border-color: #dcdee3; width: 100px; height: 10px; text-align: left; vertical-align: middle;">
+<p style="text-align: justify;"><em><span style="font-size: 10pt;"><span style="text-decoration: underline;">Info +</span> : Afin de ne pas parcourir tout un fichier (trop long…) pour trouver un paramètre précis, appuyez simultanément sur les touches Ctrl et W de votre clavier. Dans la partie inférieure de l’écran, saisissez le paramètre recherché et appuyez sur Entrée, vous serez alors directement placé dessus.</span></em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Ensuite pour terminer sur la grosse partie configuration, il faut <strong>créer un virtualhost dans le service web spécialement dédié au site web de notre GLPI</strong>. Un virtualhost est un fichier configuré sur apache permettant de faire cohabiter plusieurs sites web différents sur la même machine. Chaque virtualhost est configuré pour l’un des sites web hébergé sur le serveur.</p>
+<p style="text-align: justify;">Créez dans le dossier d’apache2 un <strong>fichier nommé «&nbsp;glpi.conf&nbsp;»</strong>&nbsp;:</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">nano /etc/apache2/sites-available/glpi.conf</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Y insérer le contenu suivant basé sur la doc GLPI, une fois encore en adaptant à votre environnement <em>(bien respecter la syntaxe)</em> :</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">&lt;VirtualHost *:80&gt;<br>
+# ServerName vm-glpi<br>
+ServerAlias 192.168.3.80<br>
+DocumentRoot /var/www/html<br>
+Alias <code>"</code>/glpi<code>"</code> <code>"</code>/var/www/html/glpi/public<code>"</code><br>
+&lt;Directory /var/www/html/glpi&gt;<br>
+Require all granted<br>
+RewriteEngine On<br>
+RewriteCond %{REQUEST_FILENAME} !-f<br>
+RewriteRule ^(.*)$ index.php [QSA,L]<br>
+&lt;/Directory&gt;<br>
+&lt;/VirtualHost&gt;<br>
+</span></td>
+</tr>
+</tbody>
+</table>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-16.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5172 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-16.png" alt="" width="509" height="306" srcset="https://neptunet.fr/wp-content/uploads/2022/12/glpi10-16.png 509w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-16-300x180.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-16-24x14.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-16-36x22.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-16-48x29.png 48w" sizes="(max-width: 509px) 100vw, 509px"></a></p>
+<table style="width: 100.486%; height: 10px;">
+<tbody>
+<tr style="height: 10px;">
+<td style="background-color: #f5bfbf; border-color: #dcdee3; width: 100px; height: 10px; text-align: left; vertical-align: middle;">
+<p style="text-align: justify;"><span style="font-size: 10pt;"><em><span style="text-decoration: underline;">Info ++</span> : J’utilise ici un « ServerAlias » avec l’IP de mon serveur GLPI car je ne suis pas sur un domaine, mon DNS n’est donc pas configuré actuellement pour communiquer avec le « ServerAName » que j’ai défini. Cela signifie que je vais aller sur GLPI grâce à son IP, et pas son nom. Si vous êtes dans un domaine avec le DNS configuré (hôte A faisant pointer le nom de votre serveur GLPI sur son IP et éventuellement un CNAME, un alias), utilisez directement la directive « ServerName » avec le nom sur lequel vous accéderez à GLPI via une interface web, il vous suffit de décommenter la ligne ServerName en supprimant le #.<br>
+La directive « Alias » est utile uniquement quand votre glpi est installé dans un sous-dossier du dossier par défaut des services web, par exemple dans ce tuto dans /var/www/html/glpi au lieu de /var/www/glpi.<br>
+Voici un exemple d’un fichier glpi.conf dans lequel glpi est directement dans le dossier racine du service web et pour lequel la connexion se fera à l’aide de son nom ou d’un alias sur l’URL http://glpi :<br>
+<a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-17.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5173 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-17.png" alt="" width="517" height="289" srcset="https://neptunet.fr/wp-content/uploads/2022/12/glpi10-17.png 517w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-17-300x168.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-17-24x13.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-17-36x20.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-17-48x27.png 48w" sizes="(max-width: 517px) 100vw, 517px"></a><br>
+</em></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Une fois ceci fait, <strong>activez un module apache</strong> qui permet de faire de la redirection d’URL :</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">a2enmod rewrite</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Et enfin, <strong>activez le fichier de configuration web spécialement créé précédemment pour glpi&nbsp;</strong>:</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">a2ensite glpi.conf</span></td>
+</tr>
+</tbody>
+</table>
+<p>Il ne reste plus qu’à <strong>redémarrer le service apache2</strong> pour appliquer toutes les modifications apportées :</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">systemctl restart apache2</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">C’est tout pour cette partie, <strong>le serveur est prêt</strong>, maintenant dernière ligne droite&nbsp;!</p>
+<p>&nbsp;</p>
+<p id="7" style="padding-left: 40px;"><span style="color: #3366ff;"><strong><span style="font-size: 14pt;">7. <span style="text-decoration: underline;">Configuration finale de GLPI via interface web</span></span></strong></span></p>
+<p>Les fichiers pour GLPI sont prêts, <strong>l’installation va se poursuivre directement via une interface web.</strong></p>
+<p style="text-align: justify;">Accédez à la machine<strong>&nbsp;depuis n’importe quel PC</strong>&nbsp; <strong><u>sur le même réseau</u></strong><strong> en vous rendant sur à l’URL suivante</strong>&nbsp;:</p>
+<p style="text-align: center;"><strong><span style="color: #3366ff;">http://ip_ou_nom_de_votre_machine_glpi/glpi</span></strong></p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-18.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5177 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-18.png" alt="" width="678" height="131" srcset="https://neptunet.fr/wp-content/uploads/2022/12/glpi10-18.png 678w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-18-300x58.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-18-24x5.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-18-36x7.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-18-48x9.png 48w" sizes="(max-width: 678px) 100vw, 678px"></a></p>
+<p style="text-align: justify;">Vous arrivez sur la page du <strong>setup de GLP</strong>I. Sélectionnez le Français dans la liste déroulante et cliquez sur OK.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-2.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-4486 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-2.png" alt="" width="806" height="282" srcset="https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-2.png 806w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-2-300x105.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-2-768x269.png 768w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-2-24x8.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-2-36x13.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-2-48x17.png 48w" sizes="(max-width: 806px) 100vw, 806px"></a></p>
+<p style="text-align: justify;"><strong>Acceptez les conditions d’utilisation</strong> pour poursuivre.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-3.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-4487 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-3.png" alt="" width="792" height="525" srcset="https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-3.png 792w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-3-300x199.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-3-768x509.png 768w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-3-24x16.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-3-36x24.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-3-48x32.png 48w" sizes="(max-width: 792px) 100vw, 792px"></a></p>
+<p style="text-align: justify;">Cliquez sur le bouton <strong>Installer</strong> pour lancer le setup.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-4.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-4488 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-4.png" alt="" width="782" height="330" srcset="https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-4.png 782w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-4-300x127.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-4-768x324.png 768w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-4-24x10.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-4-36x15.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-4-48x20.png 48w" sizes="(max-width: 782px) 100vw, 782px"></a></p>
+<p style="text-align: justify;">Une série de test sera lancée par le setup pour s’assurer que tous <strong>les prérequis nécessaires au bon fonctionnement de GLPI sont remplis</strong>. Si vous avez correctement suivi ce tuto, il ne devrait y avoir que des coches vertes, si ce n’est pas le cas, corrigez d’abord les erreurs présentes qui peuvent être bloquantes. . Cliquez sur <strong>Continuer</strong>.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-04.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5148 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-04.png" alt="" width="771" height="1354" srcset="https://neptunet.fr/wp-content/uploads/2022/12/glpi10-04.png 771w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-04-171x300.png 171w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-04-583x1024.png 583w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-04-768x1349.png 768w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-04-14x24.png 14w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-04-20x36.png 20w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-04-27x48.png 27w" sizes="(max-width: 771px) 100vw, 771px"></a></p>
+<p style="text-align: justify;">Il reste à saisir les <strong>informations sur la base de données destinées à GLPI</strong> que nous avons précédemment créée. Saisissez <strong>localhost</strong> pour spécifier que la machine actuelle héberge à la fois le site web de GLPI et la base de données <em>(si la base de données est stockée sur une autre machine, saisissez son adresse IP ou son nom)</em>. Rentrez ensuite le nom de l’<strong>utilisateur qui a tous les privilèges sur cette base de données</strong> et son mot de passe.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-03.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5147 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-03.png" alt="" width="779" height="470" srcset="https://neptunet.fr/wp-content/uploads/2022/12/glpi10-03.png 779w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-03-300x181.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-03-768x463.png 768w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-03-24x14.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-03-36x22.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-03-48x29.png 48w" sizes="(max-width: 779px) 100vw, 779px"></a></p>
+<p style="text-align: justify;">Sélectionnez ensuite la <strong>base de données créée spécialement pour GLPI</strong>, il n’y a qu’à cocher le cercle devant le nom de la base de données que vous aurez créée avant de cliquer sur Continuer.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-02.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5146 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-02.png" alt="" width="768" height="524" srcset="https://neptunet.fr/wp-content/uploads/2022/12/glpi10-02.png 768w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-02-300x205.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-02-24x16.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-02-36x25.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-02-48x33.png 48w" sizes="(max-width: 768px) 100vw, 768px"></a></p>
+<p>Le setup va contacter la base de données pour s’assurer que tout est OK. Patientez quelques secondes avant de pouvoir continuer.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-8.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-4492 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-8.png" alt="" width="790" height="297" srcset="https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-8.png 790w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-8-300x113.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-8-768x289.png 768w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-8-24x9.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-8-36x14.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-8-48x18.png 48w" sizes="(max-width: 790px) 100vw, 790px"></a></p>
+<p style="text-align: justify;">Choisissez d’envoyer ou pas des statistiques sur votre utilisation de GLPI à l’équipe qui gère le projet et poursuivez.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-9.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-4493 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-9.png" alt="" width="782" height="722" srcset="https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-9.png 782w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-9-300x277.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-9-768x709.png 768w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-9-24x22.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-9-36x33.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-9-48x44.png 48w" sizes="(max-width: 782px) 100vw, 782px"></a></p>
+<p style="text-align: justify;">On vous informe ensuite qu’il existe une version commerciale de GLPI avec un service support dédié. Vous pouvez également si vous le souhaitez faire un don. Cliquez sur Continuer.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-10.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-4494 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-10.png" alt="" width="781" height="491" srcset="https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-10.png 781w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-10-300x189.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-10-768x483.png 768w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-10-24x15.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-10-36x23.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-10-48x30.png 48w" sizes="(max-width: 781px) 100vw, 781px"></a></p>
+<p style="text-align: justify;">L’installation est désormais terminée. <span style="text-decoration: underline;"><strong>Notez bien les identifiants par défaut qui permettront de rentrer dans l’interface web de GLPI</strong></span>. Ils seront à changer par la suite. Cliquez sur Utiliser GLPI.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-11.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-4495 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-11.png" alt="" width="792" height="413" srcset="https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-11.png 792w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-11-300x156.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-11-768x400.png 768w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-11-24x13.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-11-36x19.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-11-48x25.png 48w" sizes="(max-width: 792px) 100vw, 792px"></a></p>
+<p style="text-align: justify;">Connectez vous avec les<strong> identifiants par défaut</strong> du compte GLPI qui est le super-administrateur.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-01.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-5145 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/glpi10-01.png" alt="" width="845" height="654" srcset="https://neptunet.fr/wp-content/uploads/2022/12/glpi10-01.png 845w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-01-300x232.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-01-768x594.png 768w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-01-24x19.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-01-36x28.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/glpi10-01-48x37.png 48w" sizes="(max-width: 845px) 100vw, 845px"></a></p>
+<p style="text-align: justify;">Vous voilà maintenant connecté au<strong> tableau de bord</strong> de votre outil GLPI&nbsp;!</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-13.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-4497 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-13.png" alt="" width="1920" height="1080" srcset="https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-13.png 1920w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-13-300x169.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-13-1024x576.png 1024w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-13-768x432.png 768w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-13-1536x864.png 1536w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-13-24x14.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-13-36x20.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-13-48x27.png 48w" sizes="(max-width: 1920px) 100vw, 1920px"></a></p>
+<p style="text-align: justify;">Un <strong>message d’avertissement</strong> vous informe que par sécurité il faudra <strong>changer les mots de passe par défaut des 4 utilisateurs</strong> créés automatiquement et <strong>supprimer le fichier «&nbsp;install.php&nbsp;»</strong>.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-13-Copie.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-4498 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-13-Copie.png" alt="" width="796" height="54" srcset="https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-13-Copie.png 796w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-13-Copie-300x20.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-13-Copie-768x52.png 768w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-13-Copie-24x2.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-13-Copie-36x2.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-13-Copie-48x3.png 48w" sizes="(max-width: 796px) 100vw, 796px"></a></p>
+<p style="text-align: justify;">Si vous cliquez sur le nom de l’un des utilisateurs, vous arriverez directement <strong>dans ses configurations</strong>. Vous pourrez alors lui <strong>attribuer un nouveau mot de passe</strong>.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-14.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-4499 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-14.png" alt="" width="947" height="637" srcset="https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-14.png 947w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-14-300x202.png 300w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-14-768x517.png 768w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-14-24x16.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-14-36x24.png 36w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-14-48x32.png 48w" sizes="(max-width: 947px) 100vw, 947px"></a></p>
+<p>Pour <strong>supprimer le fichier install.php</strong>, la commande est la suivante&nbsp;:</p>
+<table style="border-collapse: collapse; width: 100%; height: 24px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 100%; background-color: #000000; height: 24px;"><span style="font-family: &#39;courier new&#39;, courier, monospace; font-size: 10pt; color: #ffffff;">rm /var/www/html/glpi/install/install.php</span></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100.486%; height: 10px;">
+<tbody>
+<tr style="height: 10px;">
+<td style="background-color: #d9e9ff; border-color: #dcdee3; width: 100px; height: 10px; text-align: left; vertical-align: middle;">
+<p style="text-align: justify;"><em><span style="font-size: 10pt;"><span style="text-decoration: underline;">Info +</span> : Vous pouvez également si vous le souhaitez supprimer l’intégralité du dossier install de GLPI plutôt que seulement le fichier install.php. Dans ce cas, utilisez cette commande : rm -r /var/www/html/glpi/install/</span></em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">En actualisant la page d’accueil de GLPI, <strong>les avertissements auront disparu.</strong></p>
+<p style="text-align: justify;"><span style="color: #3366ff;"><strong>Votre GLPI est désormais prêt à fonctionnel !</strong></span></p>
+<p style="text-align: justify;">Les différents <strong>menus latéraux</strong> vous permettront par exemples de gérer votre parc, vos tickets d’incidents, de centraliser vos contrats, fournisseurs ou autres, de gérer les projets du SI et d’administrer GLPI.</p>
+<p><a href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-15.png" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="aligncenter wp-image-4500 size-full" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/06-glpi10-15.png" alt="" width="246" height="366" srcset="https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-15.png 246w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-15-202x300.png 202w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-15-16x24.png 16w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-15-24x36.png 24w, https://neptunet.fr/wp-content/uploads/2022/12/06-glpi10-15-32x48.png 32w" sizes="(max-width: 246px) 100vw, 246px"></a></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;">Voilà qui conclut ce tuto sur l’installation de GLPI 10 ! Vous disposez désormais d’un <strong>outil complet pour gérer efficacement votre parc informatique</strong>. Faites en bon usage !</p>
+<p style="text-align: justify;">&nbsp;<img decoding="async" class="kws-smiley" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/hi.gif" alt="hi"></p>
+<hr>
+<div class="extra-hatom-entry-title"><span class="entry-title">[Tuto] Installer GLPI 10 sous Debian 12</span></div><section yuzopluginfree="" class="wp-yuzo yzp-wrapper  yzp-id-2150 yzp-template-grid-jet-pack yzp-layout-grid yzp-without-excerpt yzp-without-meta yzp-aspect-ratio-4-3 yzp-mobile-columns-2 yzp-tablet-columns-3 yzp-desktop-columns-3" data-version="6.2.2" data-id="2150" data-type="c" data-level="5"><h4><span style="color: #3366ff;"><strong>Articles pouvant vous intéresser</strong></span></h4><ul class="yzp-container"><li class="yzp-wrap-item  esp-show-in-mobile esp-show-in-tablet esp-show-in-desktop" post-id="1343" data-n="1"><div class="yzp-item"><div class="yzp-item-img">
+								<img alt="[Tips] Installation des VMware Tools sous Debian" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/illust-post-vmwt-debian.png">
+							</div>	<div class="yzp-item-title">
+									<a class="" data-href="https://neptunet.fr/trick-vmwaretools-debian/" rel="nofollow">[Tips] Installation des VMware Tools sous Debian</a>
+								</div></div></li><li class="yzp-wrap-item  esp-show-in-mobile esp-show-in-tablet esp-show-in-desktop" post-id="1749" data-n="2"><div class="yzp-item"><div class="yzp-item-img">
+								<img alt="[Tuto] Installer WordPress sous Linux (LAMP)" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/illust-post-lamp-wordpress.png">
+							</div>	<div class="yzp-item-title">
+									<a class="" data-href="https://neptunet.fr/lamp-wordpress/" rel="nofollow">[Tuto] Installer WordPress sous Linux (LAMP)</a>
+								</div></div></li><li class="yzp-wrap-item  esp-show-in-tablet esp-show-in-desktop" post-id="2260" data-n="3"><div class="yzp-item"><div class="yzp-item-img">
+								<img alt="[Tips] Augmenter l’espace disque d’une VM Ubuntu sous VirtualBox" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/illust-post-vbox-ubu.png">
+							</div>	<div class="yzp-item-title">
+									<a class="" data-href="https://neptunet.fr/extand-hdd2/" rel="nofollow">[Tips] Augmenter l’espace disque d’une VM Ubuntu sous VirtualBox</a>
+								</div></div></li></ul></section>	</div>
+
+	<footer class="entry-meta-bar clearfix"><div class="entry-meta clearfix">
+			<span class="by-author author vcard"><a class="url fn n" href="https://neptunet.fr/author/jmats/">Admin</a></span>
+
+			<span class="date"><a href="https://neptunet.fr/install-glpi10/" title="8 h 02 min" rel="bookmark"><time class="entry-date published" datetime="2022-12-18T08:02:04+01:00">18 décembre 2022</time><time class="updated" datetime="2023-11-17T11:25:05+01:00">17 novembre 2023</time></a></span>				<span class="category"><a href="https://neptunet.fr/category/logiciels/glpi/" rel="category tag">GLPI</a>, <a href="https://neptunet.fr/category/linux/" rel="category tag">Linux</a>, <a href="https://neptunet.fr/category/logiciels/" rel="category tag">Logiciels</a></span>
+				</div></footer>
+	</article>
+
+				
+				
+				
+				
+			
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	
+	
+
+</div><!-- .inner-wrap -->
+</div><!-- #main -->
+
+<footer id="colophon" class="clearfix">
+	<div class="footer-widgets-wrapper">
+	<div class="inner-wrap">
+		<div class="footer-widgets-area clearfix">
+			<div class="tg-one-third">
+				<aside id="simple_author_box_widget_lite-8" class="widget simple_author_box_widget_lite"><h3 class="widget-title"><span>#WHOAMI</span></h3><div class="saboxplugin-wrap" itemtype="http://schema.org/Person" itemscope="" itemprop="author"><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/neptune.png" width="100" height="100" alt="" itemprop="image"></div><div class="saboxplugin-authorname"><a href="https://neptunet.fr/author/webmaster/" class="vcard author" rel="author"><span class="fn">Poséidon</span></a></div><div class="saboxplugin-desc"><div itemprop="description"><p>Fils de Cronos et de Rhéa, frère de Zeus et d’Hadès, je suis Poséidon (ou Neptune comme tu veux…) le puissant Dieu des mers et des océans ainsi que des tremblements de ter… eh mais attendez, on est où là ?! OK je vois donc on utilise mon image pour un truc qui n’a rien à voir ? Nen mais what’s the hell ?!</p>
+</div></div><div class="clearfix"></div></div></div></aside>			</div>
+							<div class="tg-one-third tg-column-2">
+					<aside id="nav_menu-5" class="widget widget_nav_menu"><h3 class="widget-title"><span>EN SAVOIR PLUS</span></h3><div class="menu-bas-container"><ul id="menu-bas" class="menu"><li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="https://neptunet.fr/a-propos/">A propos</a></li>
+<li id="menu-item-2556" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2556"><a href="https://neptunet.fr/les-consignes-de-la-dsi/">Les consignes de la DSI</a></li>
+<li id="menu-item-222" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-222"><a href="https://neptunet.fr/infos/">Informations complémentaires</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-79"><a rel="privacy-policy" href="https://neptunet.fr/politique-de-confidentialite/">Politique de confidentialité</a></li>
+</ul></div></aside><aside id="search-4" class="widget widget_search"><h3 class="widget-title"><span>Zone de recherche</span></h3><form action="https://neptunet.fr/" class="search-form searchform clearfix" method="get">
+	<div class="search-wrap">
+		<input type="text" placeholder="  Saisir un mot-clé" class="s field" name="s">
+		<button class="search-icon" type="submit"></button>
+	</div>
+</form><!-- .searchform --></aside>				</div>
+										<div class="tg-one-third tg-after-two-blocks-clearfix">
+					<aside id="text-11" class="widget widget_text"><h3 class="widget-title"><span>Dernière vidéo publiée</span></h3>			<div class="textwidget"><div class="fluid-width-video-wrapper" style="padding-top: 56.266666666666666% !important;"><iframe loading="lazy" id="_ytid_51549" data-origwidth="750" data-origheight="422" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/g7slFRnUN-Y.html" class="__youtube_prefs__  __youtube_prefs_widget__  no-lazyload" title="Installer GLPI 10 sous Debian 12" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" data-no-lazy="1" data-skipgform_ajax_framebjll="" style="opacity: 1;"></iframe></div>
+</div>
+		</aside>				</div>
+								</div>
+	</div>
+</div>
+	<div class="footer-socket-wrapper clearfix">
+		<div class="inner-wrap">
+			<div class="footer-socket-area">
+				<div class="copyright">Copyright © 2023 <a href="https://neptunet.fr/" title="NEPTUNET.FR"><span>NEPTUNET.FR</span></a>. - Tous droits réservés</div>				<nav class="small-menu clearfix">
+									</nav>
+			</div>
+		</div>
+	</div>
+</footer>
+<a href="https://neptunet.fr/install-glpi10/#masthead" id="scroll-up" style="display: inline;"></a>
+</div><!-- #page -->
+
+<!--googleoff: all--><div id="cookie-law-info-bar" data-nosnippet="true" data-cli-style="cli-style-v2" data-cli-type="widget" style="background-color: rgb(51, 51, 51); color: rgb(255, 255, 255); font-family: inherit; inset: auto 15px 15px auto; width: 300px; height: auto; max-height: 570px; overflow: auto; position: fixed; box-sizing: border-box; display: none; opacity: 1;"><h5 class="cli_messagebar_head">Gestion des cookies</h5><span><div class="cli-bar-container cli-style-v2"><div class="cli-bar-message">Neptunet.fr utilise des cookies dans un but d'optimisation du service et de statistiques. Vous pouvez accepter les paramètres définis par défaut ou gérer vos préférences en cliquant sur le bouton "Personnaliser" disponible à tout moment de votre navigation dans "Gérer les cookies" en bas à droite de votre écran. <a href="https://neptunet.fr/politique-de-confidentialite/#Cookies" id="CONSTANT_OPEN_URL" target="_blank" class="cli-plugin-main-link" style="display: inline-block; color: rgb(255, 255, 255);">En savoir plus</a></div><div class="cli-bar-btn_container"><a id="wt-cli-accept-all-btn" role="button" data-cli_action="accept_all" class="wt-cli-element large cli-plugin-button wt-cli-accept-all-btn cookie_action_close_header cli_action_button" style="color: rgb(255, 255, 255); background-color: rgb(97, 162, 41);">Accepter</a><a role="button" class="large cli-plugin-button cli-plugin-main-button cli_settings_button" style="margin: 0px 10px 0px 5px; color: rgb(255, 255, 255); background-color: rgb(30, 115, 190);">Personnaliser</a></div></div></span></div><div id="cookie-law-info-again" style="background-color: rgb(51, 51, 51); color: rgb(255, 255, 255); position: fixed; font-family: inherit; width: auto; bottom: 0px; right: 100px;" data-nosnippet="true"><span id="cookie_hdr_showagain">Gérer les cookies</span></div><div class="cli-modal cli-blowup cli-out" data-nosnippet="true" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true" style="opacity: 1;">
+  <div class="cli-modal-dialog" role="document">
+	<div class="cli-modal-content cli-bar-popup">
+		  <button type="button" class="cli-modal-close" id="cliModalClose">
+			<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+			<span class="wt-cli-sr-only">Fermer</span>
+		  </button>
+		  <div class="cli-modal-body">
+			<div class="cli-container-fluid cli-tab-container">
+	<div class="cli-row">
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+			<div class="cli-privacy-overview">
+				<h4>Paramètres de confidentialité actuels</h4>				<div class="cli-privacy-content">
+					<div class="cli-privacy-content-text">Ce site web utilise des cookies pour améliorer votre expérience pendant votre navigation et pour produire des statistiques de visites annuelles. Parmi ceux-ci, les cookies qui sont classés comme nécessaires sont stockés sur votre navigateur car ils s...</div>
+				</div>
+				<a class="cli-privacy-readmore" aria-label="Voir plus" role="button" data-readmore-text="Voir plus" data-readless-text="Voir moins"></a>			</div>
+		</div>
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+												<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab">
+								Nécessaire							</a>
+															<div class="wt-cli-necessary-checkbox">
+									<input type="checkbox" class="cli-user-preference-checkbox" id="wt-cli-checkbox-necessary" data-id="checkbox-necessary" checked="checked">
+									<label class="form-check-label" for="wt-cli-checkbox-necessary">Nécessaire</label>
+								</div>
+								<span class="cli-necessary-caption">Toujours activé</span>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="necessary">
+								<div class="wt-cli-cookie-description">
+									Les cookies nécessaires sont absolument essentiels au bon fonctionnement du site. Ces cookies assurent les fonctionnalités de base et les fonctionnalités de sécurité du site Web, de manière anonyme.								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="functional" data-toggle="cli-toggle-tab">
+								Fonctionnel							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-functional" class="cli-user-preference-checkbox" data-id="checkbox-functional" checked="checked">
+									<label for="wt-cli-checkbox-functional" class="cli-slider" data-cli-enable="Activé" data-cli-disable="Désactivé"><span class="wt-cli-sr-only">Fonctionnel</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content" style="display: none;">
+							<div class="cli-tab-pane cli-fade" data-id="functional">
+								<div class="wt-cli-cookie-description">
+									Les cookies fonctionnels permettent d’exécuter certaines fonctionnalités comme le partage du contenu du site Web sur les plateformes de médias sociaux, la collecte de retours et d’autres fonctionnalités tierces.
+								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="performance" data-toggle="cli-toggle-tab">
+								Performance							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-performance" class="cli-user-preference-checkbox" data-id="checkbox-performance" checked="checked">
+									<label for="wt-cli-checkbox-performance" class="cli-slider" data-cli-enable="Activé" data-cli-disable="Désactivé"><span class="wt-cli-sr-only">Performance</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="performance">
+								<div class="wt-cli-cookie-description">
+									Les cookies Performance sont utilisés pour comprendre et analyser les indices de performance clés du site Web, ce qui permet d’offrir une meilleure expérience utilisateur aux visiteurs.
+<table class="cookielawinfo-row-cat-table cookielawinfo-winter"><thead><tr><th class="cookielawinfo-column-1">Cookie</th><th class="cookielawinfo-column-3">Durée</th><th class="cookielawinfo-column-4">Description</th></tr></thead><tbody><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">VISITOR_INFO1_LIVE</td><td class="cookielawinfo-column-3">5 months 27 days</td><td class="cookielawinfo-column-4">Tente d'estimer la bande passante des utilisateurs sur des pages avec des vidéos YouTube intégrées.</td></tr></tbody></table>								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header cli-tab-active">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="analytics" data-toggle="cli-toggle-tab">
+								Analytique							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-analytics" class="cli-user-preference-checkbox" data-id="checkbox-analytics" checked="checked">
+									<label for="wt-cli-checkbox-analytics" class="cli-slider" data-cli-enable="Activé" data-cli-disable="Désactivé"><span class="wt-cli-sr-only">Analytique</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content" style="display: block;">
+							<div class="cli-tab-pane cli-fade" data-id="analytics">
+								<div class="wt-cli-cookie-description">
+									Les cookies analytiques sont utilisés pour comprendre comment les visiteurs interagissent avec le site. Ces cookies aident à fournir des informations sur les mesures du nombre de visiteurs, la source de trafic, etc.
+<table class="cookielawinfo-row-cat-table cookielawinfo-winter"><thead><tr><th class="cookielawinfo-column-1">Cookie</th><th class="cookielawinfo-column-3">Durée</th><th class="cookielawinfo-column-4">Description</th></tr></thead><tbody><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">YSC</td><td class="cookielawinfo-column-3">session</td><td class="cookielawinfo-column-4">Enregistre un identifiant unique pour conserver des statistiques sur les vidéos de YouTube vues par l'utilisateur.</td></tr></tbody></table>								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="others" data-toggle="cli-toggle-tab">
+								Autres							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-others" class="cli-user-preference-checkbox" data-id="checkbox-others" checked="checked">
+									<label for="wt-cli-checkbox-others" class="cli-slider" data-cli-enable="Activé" data-cli-disable="Désactivé"><span class="wt-cli-sr-only">Autres</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="others">
+								<div class="wt-cli-cookie-description">
+									Les autres cookies non catégorisés sont ceux qui sont analysés et qui n’ont pas encore été classés dans une catégorie.
+								</div>
+							</div>
+						</div>
+					</div>
+										</div>
+	</div>
+</div>
+		  </div>
+		  <div class="cli-modal-footer">
+			<div class="wt-cli-element cli-container-fluid cli-tab-container">
+				<div class="cli-row">
+					<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+						<div class="cli-tab-footer wt-cli-privacy-overview-actions">
+						
+															<a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn">Enregistrer &amp; appliquer</a>
+													</div>
+												<div class="wt-cli-ckyes-footer-section">
+							<div class="wt-cli-ckyes-brand-logo">Propulsé par <a href="https://www.cookieyes.com/"><img src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/logo-cookieyes.svg" alt="CookieYes Logo"></a></div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<!--googleon: all--><link rel="stylesheet" id="cookie-law-info-table-css" href="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/cookie-law-info-table.css" type="text/css" media="all">
+<script type="text/javascript" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/index.js.téléchargé" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/neptunet.fr\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/index(1).js.téléchargé" id="contact-form-7-js"></script>
+<script type="text/javascript" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/pixel-geo.min.js.téléchargé" id="yuzo-pixel-geo-js"></script>
+<script type="text/javascript" id="yuzo-js-js-extra">
+/* <![CDATA[ */
+var yuzo_vars = {"ajaxurl":"https:\/\/neptunet.fr\/wp-admin\/admin-ajax.php","post_id":"4469","url":"https%3A%2F%2Fneptunet.fr%2Finstall-glpi10%2F","where_is":"single|singular","nonce":"0a12b4872c","nonce2":"199abaa99c","off_views":"0","off_views_logged":"0","is_logged":"0","allows_to_count_visits":"1","disabled_counter":"0","level_article":"medium"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/yuzo.min.js.téléchargé" id="yuzo-js-js"></script>
+<script type="text/javascript" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/navigation.js.téléchargé" id="spacious-navigation-js"></script>
+<script type="text/javascript" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/skip-link-focus-fix.js.téléchargé" id="spacious-skip-link-focus-fix-js"></script>
+<script type="text/javascript" src="./[Tuto] Installer GLPI 10 sous Debian 12 – NEPTUNET.FR_files/fitvids.min.js.téléchargé" id="__ytprefsfitvids__-js"></script>
+
+
+
+</body></html>

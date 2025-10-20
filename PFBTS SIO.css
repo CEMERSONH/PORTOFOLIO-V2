@@ -1,0 +1,192 @@
+* .input {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  background-color: #150e1a6b;
+  justify-content: center;
+  border-radius: 5px;
+  gap: 7.5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: all 0.2s ease;
+  border: 1px solid #310f446b;
+  font-size: 0.9rem;
+}
+
+.value {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  color: aliceblue;
+  display: flex;
+  position: relative;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.value:not(:active):hover,
+.active,
+.value:focus {
+  background-color: #21262cad;
+}
+
+.value:focus,
+.value:active {
+  background-color: #310f446b;
+  outline: none;
+}
+ul li.clrA a {
+  background-color: burlywood;
+  color: #21262cad;
+  justify-content: center;
+  border-radius: 5px;
+  gap: 7.5px;
+}
+.value::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: #0a01303f;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.value:focus::before,
+.value:active::before {
+  opacity: 1;
+}
+
+.value svg {
+  width: 15px;
+  margin-top: 4px;
+}
+
+.value svg.normal {
+  width: 15px;
+  margin-top: 1px;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(frequency-wave-7776034_1920.jpg);
+
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.logo a {
+  color: beige;
+  padding: 0px 2px;
+  border: 2px solid beige;
+  position: absolute;
+  top: 480px;
+  left: 570px;
+}
+ul li a {
+  text-decoration: none;
+  color: beige;
+  text-transform: uppercase;
+  transition: 0.6s ease;
+}
+
+/*card*/
+.card {
+  width: 410px;
+  height: 254px;
+  border-radius: 4px;
+  background: #0a01303f;
+  display: flex;
+  gap: 5px;
+  padding: 0.4em;
+  margin-left: 450px;
+}
+
+.card p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.5s;
+  background: #0a01303f;
+  border: 1px solid burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card p:hover {
+  flex: 4;
+}
+
+.card p span {
+  min-width: 14em;
+  padding: 0.5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all 0.5s;
+  text-transform: uppercase;
+  color: beige;
+  letter-spacing: 0.1em;
+}
+
+.card p:hover span {
+  transform: rotate(0);
+}
+
+/*card*/
+.card2 {
+  width: 410px;
+  height: 254px;
+  border-radius: 4px;
+  background: #0a01303f;
+  display: flex;
+  gap: 5px;
+  padding: 0.4em;
+  margin-left: 450px;
+}
+
+.card2 p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.5s;
+  background: #0a01303f;
+  border: 1px solid burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card2 p:hover {
+  flex: 4;
+}
+
+.card2 p span {
+  min-width: 14em;
+  padding: 0.5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all 0.5s;
+  text-transform: uppercase;
+  color: beige;
+  letter-spacing: 0.1em;
+}
+
+.card2 p:hover span {
+  transform: rotate(0);
+}
+.titresld {
+  color: burlywood;
+  margin-top: -43px;
+}
